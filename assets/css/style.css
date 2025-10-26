@@ -6291,6 +6291,7 @@ Go Top Button CSS
 
 .msf-step .question {
   color: var(--primary);
+  font-size: 23px;
 }
 
 .msf-step .options-wrapper {
@@ -6341,7 +6342,7 @@ button.msf-option::before {
 /* selected state */
 button.msf-option.selected {
   border-color: #2f3a66 !important;
-  background: #ffffff !important;
+  background:#dfe3e7 !important;
   color: #1f2340 !important;
 }
 
@@ -6354,14 +6355,8 @@ button.msf-option.selected::before {
 
 /* subtle hover */
 button.msf-option:hover {
-  background: #fbfdff !important;
+  background: #dfe3e7 !important;
 }
 
-/* reset button styling tweak to look like link */
-.msf-reset {
-  background: transparent !important;
-  border: none !important;
-  color: #6c757d !important;
-}
 
 /*# sourceMappingURL=style.css.map */
