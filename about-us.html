@@ -342,196 +342,121 @@
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12">
-                    <form class="choose-us-form bg-white br-5 ms-auto" style="max-width: 800px;">
-                        <div class="section-title">
-                            <h2 class="fw-semibold mb-2">We Will Help You Find The Right Policy</h2>
-                            <span>Fill the quote and compare policies.</span>
+                    <form class="choose-us-form bg-white br-5 multi-step-form" data-form-id="insurance-steps">
+                        <div class="section-heading">
+                            <h2 class="mb-0">We Will Help You Find The Right Policy</h2>
                         </div>
 
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="one-tab" data-bs-toggle="tab"
-                                    data-bs-target="#one-tab-pane" type="button" role="tab" aria-controls="one-tab-pane"
-                                    aria-selected="true">Education</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="two-tab" data-bs-toggle="tab"
-                                    data-bs-target="#two-tab-pane" type="button" role="tab" aria-controls="two-tab-pane"
-                                    aria-selected="false">Travel</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="three-tab" data-bs-toggle="tab"
-                                    data-bs-target="#three-tab-pane" type="button" role="tab"
-                                    aria-controls="three-tab-pane" aria-selected="false">Health</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="four-tab" data-bs-toggle="tab"
-                                    data-bs-target="#four-tab-pane" type="button" role="tab"
-                                    aria-controls="four-tab-pane" aria-selected="false">Car</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="five-tab" data-bs-toggle="tab"
-                                    data-bs-target="#five-tab-pane" type="button" role="tab"
-                                    aria-controls="five-tab-pane" aria-selected="false">Business</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="one-tab-pane" role="tabpanel"
-                                aria-labelledby="one-tab" tabindex="0">
-                                <div class="health-form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="First Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Last Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Email*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Insurance Type">
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-container">
-                                        <label for="balance-range-1">Limited Of Balance</label>
-                                        <input type="range" id="balance-range-1" min="0" max="5000" value="2390"
-                                            step="10">
-                                        <div class="slider-value">
-                                            <span>Selected Value</span>
-                                            <strong id="balance-value-1">$2390</strong>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Send Request</button>
+                        <!-- Multistep form (flexible): each .msf-step has data-step index starting at 1 -->
+                        <div class="msf-progress-wrapper mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2 ">
+                                <div>Step <strong class="msf-current">1</strong> of <strong class="msf-total">5</strong>
                                 </div>
+                                <div class="text-muted small">Progress</div>
                             </div>
-                            <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab"
-                                tabindex="0">
-                                <div class="health-form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="First Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Last Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Email*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Insurance Type">
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-container">
-                                        <label for="balance-range-2">Limited Of Balance</label>
-                                        <input type="range" id="balance-range-2" min="0" max="5000" value="2390"
-                                            step="10">
-                                        <div class="slider-value">
-                                            <span>Selected Value</span>
-                                            <strong id="balance-value-2">$2390</strong>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Send Request</button>
-                                </div>
+                            <div class="progress" aria-hidden="true">
+                                <div class="progress-bar" role="progressbar" style="width:0%" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
                             </div>
-                            <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab"
-                                tabindex="0">
-                                <div class="health-form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="First Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Last Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Email*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Insurance Type">
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-container">
-                                        <label for="balance-range-3">Limited Of Balance</label>
-                                        <input type="range" id="balance-range-3" min="0" max="5000" value="2390"
-                                            step="10">
-                                        <div class="slider-value">
-                                            <span>Selected Value</span>
-                                            <strong id="balance-value-3">$2390</strong>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Send Request</button>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab"
-                                tabindex="0">
-                                <div class="health-form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="First Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Last Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Email*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Insurance Type">
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-container">
-                                        <label for="balance-range-4">Limited Of Balance</label>
-                                        <input type="range" id="balance-range-4" min="0" max="5000" value="2390"
-                                            step="10">
-                                        <div class="slider-value">
-                                            <span>Selected Value</span>
-                                            <strong id="balance-value-4">$2390</strong>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Send Request</button>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="five-tab-pane" role="tabpanel" aria-labelledby="five-tab"
-                                tabindex="0">
-                                <div class="health-form">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="First Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Last Name*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Email*">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Insurance Type">
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-container">
-                                        <label for="balance-range-5">Limited Of Balance</label>
-                                        <input type="range" id="balance-range-5" min="0" max="5000" value="2390"
-                                            step="10">
-                                        <div class="slider-value">
-                                            <span>Selected Value</span>
-                                            <strong id="balance-value-5">$2390</strong>
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Send Request</button>
-                                </div>
+                            <div class="msf-indicators d-flex justify-content-between mt-2" aria-hidden="true">
+                                <!-- indicators are generated dynamically by JS -->
                             </div>
                         </div>
+
+                        <div class="msf-steps">
+                            <div class="msf-step" data-step="1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="zip" class="form-label">Zip Code</label>
+                                            <input type="number" class="form-control  msf-input" data-field="zip_code"
+                                                id="zip" placeholder="00000">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="age" class="form-label">Age</label>
+                                            <input type="number" class="form-control  msf-input" data-field="age"
+                                                id="age" placeholder="35">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="sex" class="form-label">Sex</label>
+                                            <select id="sex" class="form-select msf-input" aria-label="Sex"
+                                                data-field="sex">
+                                                <option selected>Select</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="msf-step d-none" data-step="2">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="household_member" class="form-label">Household Members</label>
+                                            <input type="number" class="form-control  msf-input"
+                                                data-field="household_member" id="household_member" placeholder="12">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="household_income" class="form-label">Household Income</label>
+                                            <input type="number" class="form-control  msf-input"
+                                                data-field="household_income" id="household_income" placeholder="350">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="date_of_birth" class="form-label">Date of Birth</label>
+                                            <input type="date" class="form-control  msf-input"
+                                                data-field="date_of_birth" id="date_of_birth">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="msf-step d-none" data-step="3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="child_1_name" class="form-label">Child#1 Name</label>
+                                            <input type="text" class="form-control  msf-input" data-field="child_1_name"
+                                                id="child_1_name" placeholder="joy">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="child_2_name" class="form-label">Child#2 Name</label>
+                                            <input type="text" class="form-control  msf-input" data-field="child_2_name"
+                                                id="child_2_name" placeholder="joy">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="child_3_name" class="form-label">Child#3 Name</label>
+                                            <input type="text" class="form-control  msf-input" data-field="child_3_name"
+                                                id="child_3_name" placeholder="joy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="msf-controls mt-4 d-flex align-items-center justify-content-end gap-3">
+                            <button type="button" class="msf-prev default-btn d-none">Previous</button>
+                            <button type="button" class="msf-next default-btn">Next</button>
+                            <button type="submit" class="default-btn msf-submit d-none">Send Request</button>
+                        </div>
+
+                        <!-- Hidden inputs will be kept in the form to allow later submission or integration -->
+                        <div class="msf-hidden d-none" aria-hidden="true"></div>
                     </form>
                 </div>
             </div>
@@ -770,6 +695,8 @@
     <script src="assets/js/fslightbox.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/multistep-form.js"></script>
+
 </body>
 
 </html>
