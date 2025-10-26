@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    // MultiStepForm: lightweight reusable module
+    // MultiStepForm: lightweight reusable module (input-based)
     // - Finds forms with class 'multi-step-form' and initializes them
-    // - Options are buttons with class 'msf-option' and attributes data-field / data-value
+    // - Collects inputs having class 'msf-input' and data-field attributes inside each step
     // - Steps are elements with class 'msf-step' and attribute data-step
     // - Emits a custom event 'msf:change' on the form with detail {data, currentStep}
     // - Provides form.getData() to retrieve collected answers
@@ -18,9 +18,9 @@
         // elements
         this.progressCurrent = form.querySelector('.msf-current');
         this.progressTotal = form.querySelector('.msf-total');
-        this.backBtn = form.querySelector('.msf-back');
-        this.resetBtn = form.querySelector('.msf-reset');
-        this.submitBtn = form.querySelector('.msf-submit');
+    this.prevBtn = form.querySelector('.msf-prev');
+    this.nextBtn = form.querySelector('.msf-next');
+    this.submitBtn = form.querySelector('.msf-submit');
         this.hiddenContainer = form.querySelector('.msf-hidden');
         this.progressBar = form.querySelector('.msf-progress-wrapper .progress-bar');
         this.indicatorsContainer = form.querySelector('.msf-indicators');
@@ -28,7 +28,6 @@
         if (this.progressTotal) this.progressTotal.textContent = String(this.total);
         // build indicators only after we know total
         this._buildIndicators();
-        this._bindOptions();
         this._bindControls();
         this._showStep(1);
     }
@@ -57,93 +56,65 @@
         }
     };
 
-    MultiStepForm.prototype._bindOptions = function () {
+    // Collect inputs from the current step and save into data + hidden fields
+    MultiStepForm.prototype._collectCurrentInputs = function () {
+        var stepEl = this.form.querySelector('.msf-step[data-step="' + this.current + '"]');
+        if (!stepEl) return;
+        var inputs = Array.from(stepEl.querySelectorAll('.msf-input'));
         var self = this;
-        this.form.addEventListener('click', function (e) {
-            var btn = e.target.closest('.msf-option');
-            if (!btn) return;
-            e.preventDefault();
-            var field = btn.getAttribute('data-field');
-            var value = btn.getAttribute('data-value');
+        inputs.forEach(function (inp) {
+            var field = inp.getAttribute('data-field') || inp.name;
             if (!field) return;
-
-            // Save answer
+            var value = inp.value;
             self.data[field] = value;
-
-            // Update or create a hidden input for potential form submission later
             self._setHidden(field, value);
-
-            // Visually mark the clicked option as selected and clear others in this step
-            try {
-                var stepEl = btn.closest('.msf-step');
-                if (stepEl) {
-                    var other = Array.from(stepEl.querySelectorAll('.msf-option'));
-                    other.forEach(function (o) {
-                        o.classList.remove('selected');
-                        o.setAttribute('aria-pressed', 'false');
-                    });
-                    btn.classList.add('selected');
-                    btn.setAttribute('aria-pressed', 'true');
-                }
-            } catch (err) {
-                // ignore visual update errors
-            }
-
-            // dispatch change event
-            self._dispatchChange();
-
-            // Move to next step if available
-            if (self.current < self.total) {
-                self._showStep(self.current + 1);
-            } else {
-                // Last step - enable submit
-                self._finalize();
-            }
         });
+        // dispatch change after collecting
+        this._dispatchChange();
     };
 
-    // Apply selected state for a given step element based on saved data
-    MultiStepForm.prototype._applySelectedForStep = function (stepEl) {
+    // Apply input values for a given step (restore previously-entered values if any)
+    MultiStepForm.prototype._applyInputsForStep = function (stepEl) {
         if (!stepEl) return;
-        var opts = Array.from(stepEl.querySelectorAll('.msf-option'));
-        if (!opts || !opts.length) return;
-
-        // find the field name used by this step (first option's data-field)
-        var field = opts[0].getAttribute('data-field');
-        if (!field) return;
-
-        var selectedValue = this.data[field];
-        opts.forEach(function (o) {
-            var val = o.getAttribute('data-value');
-            if (selectedValue !== undefined && String(val) === String(selectedValue)) {
-                o.classList.add('selected');
-                o.setAttribute('aria-pressed', 'true');
-            } else {
-                o.classList.remove('selected');
-                o.setAttribute('aria-pressed', 'false');
-            }
+        var inputs = Array.from(stepEl.querySelectorAll('.msf-input'));
+        var self = this;
+        inputs.forEach(function (inp) {
+            var field = inp.getAttribute('data-field') || inp.name;
+            if (!field) return;
+            if (self.data.hasOwnProperty(field)) inp.value = self.data[field];
         });
     };
 
     MultiStepForm.prototype._bindControls = function () {
         var self = this;
-        if (this.backBtn) {
-            this.backBtn.addEventListener('click', function (e) {
+
+        // Next button: collect inputs and advance (or finalize if last)
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', function (e) {
                 e.preventDefault();
-                if (self.current > 1) self._showStep(self.current - 1);
+                // collect current inputs
+                self._collectCurrentInputs();
+                if (self.current < self.total) {
+                    self._showStep(self.current + 1);
+                } else {
+                    self._finalize();
+                }
             });
         }
-        if (this.resetBtn) {
-            this.resetBtn.addEventListener('click', function (e) {
+
+        // Previous button: go back one step
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', function (e) {
                 e.preventDefault();
-                self.reset();
+                if (self.current > 1) self._showStep(self.current - 1);
             });
         }
 
         // prevent default form submit; instead we keep API for integration
         this.form.addEventListener('submit', function (e) {
             e.preventDefault();
-            // emit a submit event with collected data; integration code can listen to it
+            // ensure current inputs are collected before submit
+            self._collectCurrentInputs();
             var submitEvent = new CustomEvent('msf:submit', { detail: { data: Object.assign({}, self.data) } });
             self.form.dispatchEvent(submitEvent);
         });
@@ -172,14 +143,26 @@
         this.current = n;
         if (this.progressCurrent) this.progressCurrent.textContent = String(this.current);
 
-        // toggle back button
-        if (this.backBtn) {
-            if (this.current > 1) this.backBtn.classList.remove('d-none');
-            else this.backBtn.classList.add('d-none');
+        // toggle previous button
+        if (this.prevBtn) {
+            if (this.current > 1) this.prevBtn.classList.remove('d-none');
+            else this.prevBtn.classList.add('d-none');
         }
 
-        // disable submit until last step answered
-        if (this.submitBtn) this.submitBtn.disabled = (this.current !== this.total);
+        // show/hide next and submit
+        if (this.nextBtn) {
+            if (this.current === this.total) this.nextBtn.classList.add('d-none');
+            else this.nextBtn.classList.remove('d-none');
+        }
+        if (this.submitBtn) {
+            if (this.current === this.total) {
+                this.submitBtn.classList.remove('d-none');
+                this.submitBtn.disabled = false;
+            } else {
+                this.submitBtn.classList.add('d-none');
+                this.submitBtn.disabled = true;
+            }
+        }
 
         // update progress bar and indicators
         try {
@@ -203,10 +186,10 @@
             console.warn('msf progress update error', err);
         }
 
-        // apply selected states for the current step (if user previously answered)
+        // restore inputs for current step from saved data (if any)
         try {
             var curStepEl = this.form.querySelector('.msf-step[data-step="' + this.current + '"]');
-            this._applySelectedForStep(curStepEl);
+            this._applyInputsForStep(curStepEl);
         } catch (e) {
             // ignore
         }
@@ -233,10 +216,10 @@
         if (this.hiddenContainer) this.hiddenContainer.innerHTML = '';
         this._showStep(1);
         if (this.submitBtn) this.submitBtn.disabled = true;
-        // clear visual selected states
+        // clear inputs visually
         try {
-            var all = Array.from(this.form.querySelectorAll('.msf-option'));
-            all.forEach(function (o) { o.classList.remove('selected'); o.setAttribute('aria-pressed', 'false'); });
+            var allInputs = Array.from(this.form.querySelectorAll('.msf-input'));
+            allInputs.forEach(function (i) { i.value = ''; });
         } catch (e) {}
         this._dispatchChange();
     };

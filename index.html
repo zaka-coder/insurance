@@ -311,44 +311,32 @@
                     <div class="msf-steps">
                         <div class="msf-step" data-step="1">
                             <p class="fw-semibold question">What age group are you in?</p>
-                            <div class="d-flex flex-column gap-4 options-wrapper">
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="age_group"
-                                    data-value="under_65">I am under 65</button>
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="age_group"
-                                    data-value="65_or_over">I am 65+</button>
+                            <div class="d-flex flex-column gap-3 options-wrapper">
+                                <!-- Dummy input for future dynamic controls -->
+                                <input type="text" class="form-control msf-input" data-field="age_group" placeholder="e.g. I am under 65 or I am 65+">
                             </div>
                         </div>
 
                         <div class="msf-step d-none" data-step="2">
                             <p class="fw-semibold question">When do you need coverage?</p>
-                            <div class="d-flex flex-column gap-4 options-wrapper">
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="when_need"
-                                    data-value="immediately">Immediately</button>
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="when_need"
-                                    data-value="within_2_weeks">Within 2 weeks</button>
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="when_need"
-                                    data-value="not_sure">I am not sure</button>
+                            <div class="d-flex flex-column gap-3 options-wrapper">
+                                <input type="text" class="form-control msf-input" data-field="when_need" placeholder="e.g. Immediately">
                             </div>
                         </div>
 
                         <div class="msf-step d-none" data-step="3">
                             <p class="question fw-semibold">How long do you expect you'll need coverage for?</p>
-                            <div class="d-flex flex-column gap-4 options-wrapper">
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="duration"
-                                    data-value="a_year_or_more">A year or more</button>
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="duration"
-                                    data-value="less_than_a_year">Less than a year</button>
-                                <button type="button" class="msf-option btn btn-outline-primary" data-field="duration"
-                                    data-value="not_sure">I am not sure</button>
+                            <div class="d-flex flex-column gap-3 options-wrapper">
+                                <input type="text" class="form-control msf-input" data-field="duration" placeholder="e.g. A year or more">
                             </div>
                         </div>
 
                     </div>
 
                     <div class="msf-controls mt-4 d-flex align-items-center justify-content-end gap-3">
-                        <button type="button" class="msf-back default-btn d-none">Back</button>
-                        <button type="button" class="msf-reset default-btn text-white">Reset</button>
-                        <button type="submit" class="default-btn msf-submit" disabled>Send Request</button>
+                        <button type="button" class="msf-prev default-btn d-none">Previous</button>
+                        <button type="button" class="msf-next default-btn">Next</button>
+                        <button type="submit" class="default-btn msf-submit d-none" disabled>Send Request</button>
                     </div>
 
                     <!-- Hidden inputs will be kept in the form to allow later submission or integration -->
