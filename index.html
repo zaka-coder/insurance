@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/css/scrollCue.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.svg">
 </head>
@@ -288,205 +287,83 @@
                         </div>
                     </div>
                 </div>
-                <form class="choose-us-form bg-white br-5">
+                <form class="choose-us-form bg-white br-5 multi-step-form" data-form-id="insurance-steps">
                     <div class="section-heading">
                         <h2 class="mb-0">We Will Help You Find The Right Policy</h2>
                     </div>
 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="one-tab" data-bs-toggle="tab"
-                                data-bs-target="#one-tab-pane" type="button" role="tab" aria-controls="one-tab-pane"
-                                aria-selected="true">Health</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane"
-                                type="button" role="tab" aria-controls="two-tab-pane"
-                                aria-selected="false">Education</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="three-tab" data-bs-toggle="tab"
-                                data-bs-target="#three-tab-pane" type="button" role="tab" aria-controls="three-tab-pane"
-                                aria-selected="false">Travel</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane"
-                                type="button" role="tab" aria-controls="four-tab-pane"
-                                aria-selected="false">Business</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="five-tab" data-bs-toggle="tab" data-bs-target="#five-tab-pane"
-                                type="button" role="tab" aria-controls="five-tab-pane"
-                                aria-selected="false">Car</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="one-tab-pane" role="tabpanel"
-                            aria-labelledby="one-tab" tabindex="0">
-                            <div class="health-form">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="First Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Last Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Email*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Insurance Type">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="slider-container">
-                                            <label for="balance-range-1">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-1" min="0" max="5000" value="2390"
-                                                step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-1">$2390</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <button type="submit" class="default-btn w-100">Send Request</button>
-                                    </div>
-                                </div>
+                    <!-- Multistep form (flexible): each .msf-step has data-step index starting at 1 -->
+                    <div class="msf-progress-wrapper mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div>Step <strong class="msf-current">1</strong> of <strong class="msf-total">5</strong></div>
+                            <div class="text-muted small">Progress</div>
+                        </div>
+                        <div class="progress" aria-hidden="true">
+                            <div class="progress-bar" role="progressbar" style="width:0%" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="msf-indicators d-flex justify-content-between mt-2" aria-hidden="true">
+                            <!-- indicators are generated dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <div class="msf-steps">
+                        <div class="msf-step" data-step="1">
+                            <p class="fs-18 fw-semibold">What age group are you in?</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="age_group" data-value="under_65">I am under 65</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="age_group" data-value="65_or_over">I am 65+</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab"
-                            tabindex="0">
-                            <div class="health-form">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="First Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Last Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Email*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Insurance Type">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="slider-container">
-                                            <label for="balance-range-2">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-2" min="0" max="5000" value="2390"
-                                                step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-2">$2390</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <button type="submit" class="default-btn w-100">Send Request</button>
-                                    </div>
-                                </div>
+
+                        <div class="msf-step d-none" data-step="2">
+                            <p class="fs-18 fw-semibold">When do you need coverage?</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="when_need" data-value="immediately">Immediately</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="when_need" data-value="within_2_weeks">Within 2 weeks</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="when_need" data-value="not_sure">I am not sure</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab"
-                            tabindex="0">
-                            <div class="health-form">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="First Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Last Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Email*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Insurance Type">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="slider-container">
-                                            <label for="balance-range-3">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-3" min="0" max="5000" value="2390"
-                                                step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-3">$2390</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <button type="submit" class="default-btn w-100">Send Request</button>
-                                    </div>
-                                </div>
+
+                        <div class="msf-step d-none" data-step="3">
+                            <p class="fs-18 fw-semibold">How long do you expect you'll need coverage for?</p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="duration" data-value="a_year_or_more">A year or more</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="duration" data-value="less_than_a_year">Less than a year</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="duration" data-value="not_sure">I am not sure</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab"
-                            tabindex="0">
-                            <div class="health-form">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="First Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Last Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Email*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Insurance Type">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="slider-container">
-                                            <label for="balance-range-4">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-4" min="0" max="5000" value="2390"
-                                                step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-4">$2390</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <button type="submit" class="default-btn w-100">Send Request</button>
-                                    </div>
-                                </div>
+
+                        <div class="msf-step d-none" data-step="4">
+                            <p class="fs-18 fw-semibold">Do any of the following reasons bring you here?</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="reason" data-value="lost_my_coverage">Lost my coverage</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="reason" data-value="started_or_left_job">Started or left a job</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="reason" data-value="move_to_new_state">Move to new state</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="reason" data-value="change_with_family">Change with my Family</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="reason" data-value="none">None of these apply to me</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="five-tab-pane" role="tabpanel" aria-labelledby="five-tab"
-                            tabindex="0">
-                            <div class="health-form">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="First Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Last Name*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Email*">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <input type="text" class="form-control" placeholder="Insurance Type">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="slider-container">
-                                            <label for="balance-range-5">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-5" min="0" max="5000" value="2390"
-                                                step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-5">$2390</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <button type="submit" class="default-btn w-100">Send Request</button>
-                                    </div>
-                                </div>
+
+                        <div class="msf-step d-none" data-step="5">
+                            <p class="fs-18 fw-semibold">What is your household size?</p>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="household_size" data-value="1">1</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="household_size" data-value="2">2</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="household_size" data-value="3">3</button>
+                                <button type="button" class="msf-option btn btn-outline-primary" data-field="household_size" data-value="4">4</button>
                             </div>
                         </div>
                     </div>
+
+                    <div class="msf-controls mt-4 d-flex align-items-center gap-3">
+                        <button type="button" class="msf-back btn btn-secondary d-none">Back</button>
+                        <button type="button" class="msf-reset btn btn-link text-muted">Reset</button>
+                        <div class="msf-spacer flex-grow-1"></div>
+                        <button type="submit" class="default-btn msf-submit" disabled>Send Request</button>
+                    </div>
+
+                    <!-- Hidden inputs will be kept in the form to allow later submission or integration -->
+                    <div class="msf-hidden d-none" aria-hidden="true"></div>
                 </form>
             </div>
         </div>
@@ -504,7 +381,7 @@
             <div class="row g-4" data-cues="slideInUp" data-duration="800">
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div id="my-element-1" class="business-services-card bg-white br-5 position-relative z-1">
-                        <img class="service-shape-2" src="assets/images/shape/service-shape-2.png" alt="image">
+                        <img class="service-shape-2" src="assets/images/service-shape-2.png" alt="image">
                         <i class="flaticon-shop shop"></i>
                         <h3 class="fs-22 fw-semibold mb-3">
                             <a href="javascript:void(0)">Commercial <span class="d-block"></span> Property
@@ -515,7 +392,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div id="my-element-2" class="business-services-card active bg-white br-5 position-relative z-1">
-                        <img class="service-shape-2" src="assets/images/shape/service-shape-2.png" alt="image">
+                        <img class="service-shape-2" src="assets/images/service-shape-2.png" alt="image">
                         <i class="flaticon-briefcase shop"></i>
                         <h3 class="fs-22 fw-semibold mb-3">
                             <a href="javascript:void(0)">Business Interruption Insurance</a>
@@ -525,7 +402,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div id="my-element-3" class="business-services-card bg-white br-5 position-relative z-1">
-                        <img class="service-shape-2" src="assets/images/shape/service-shape-2.png" alt="image">
+                        <img class="service-shape-2" src="assets/images/service-shape-2.png" alt="image">
                         <i class="flaticon-insurance shop"></i>
                         <h3 class="fs-22 fw-semibold mb-3">
                             <a href="javascript:void(0)">Professional <span class="d-block"></span> Liability
@@ -536,7 +413,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div id="my-element-4" class="business-services-card bg-white br-5 position-relative z-1">
-                        <img class="service-shape-2" src="assets/images/shape/service-shape-2.png" alt="image">
+                        <img class="service-shape-2" src="assets/images/service-shape-2.png" alt="image">
                         <i class="flaticon-target shop"></i>
                         <h3 class="fs-22 fw-semibold mb-3">
                             <a href="javascript:void(0)">Cyber <span class="d-block"></span> Liability Insurance</a>
@@ -761,7 +638,7 @@
                 </div>
             </div>
         </div>
-        <img src="assets/images/shape/footer-shape-1.png" alt="image" class="footer-shape">
+        <img src="assets/images/footer-shape-1.png" alt="image" class="footer-shape">
     </div>
     <!-- End Footer Area -->
 
@@ -778,6 +655,7 @@
     <script src="assets/js/fslightbox.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/multistep-form.js"></script>
 </body>
 
 </html>

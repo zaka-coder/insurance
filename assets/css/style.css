@@ -173,6 +173,7 @@ img {
 .pb-45 {
   padding-bottom: 45px;
 }
+
 /* Background Color */
 .bg-f2f6f6 {
   background-color: #f2f6f6;
@@ -6218,4 +6219,66 @@ Go Top Button CSS
   }
 }
 
+.msf-progress-wrapper {
+  position: relative;
+  height: 70px;
+}
+
+.msf-progress-wrapper .progress {
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.msf-progress-wrapper .progress .progress-bar {
+  background: var(--primary);
+  transition: width .4s ease;
+}
+
+.msf-indicators {
+  margin-top: .6rem;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  top: 22px;
+}
+
+.msf-indicator {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f3f5;
+  color: #495057;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+
+.msf-indicator.active {
+  background: var(--yellow-color);
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, .1);
+}
+
+.msf-indicator.completed {
+  background: var(--primary);
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, .1);
+}
+
+.msf-indicator+.msf-indicator {
+  margin-left: 8px;
+}
+
+.msf-indicators .label {
+  font-size: .85rem;
+  color: #6c757d;
+  margin-top: .25rem;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
