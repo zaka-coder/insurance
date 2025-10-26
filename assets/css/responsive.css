@@ -1,0 +1,3024 @@
+/* Min width 991px */
+@media only screen and (max-width: 767px) {
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-120 {
+    padding-top: 50px;
+  }
+  .pb-120 {
+    padding-bottom: 50px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .fs-18 {
+    font-size: 16px;
+  }
+  .fs-22 {
+    font-size: 20px;
+  }
+  .fs-24 {
+    font-size: 20px;
+  }
+  .fs-32 {
+    font-size: 20px;
+  }
+  .fs-60 {
+    font-size: 25px;
+  }
+  .fs-64 {
+    font-size: 25px;
+  }
+  /* Container Fluid */
+  .container-fluid.side-padding {
+    max-width: 540px;
+  }
+  .container-fluid.ws-padding {
+    max-width: 540px;
+  }
+  .container-fluid.lf-padding {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* section title */
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  /* section heading */
+  .section-heading h2 {
+    font-size: 25px;
+  }
+  .section-heading p .d-block {
+    display: inline-block !important;
+  }
+  /* header area */
+  .header-area .social-icons {
+    justify-content: center;
+    margin-bottom: 5px !important;
+  }
+  .header-area .contact-info {
+    text-align: center;
+  }
+  .header-area .contact-info.d-flex {
+    display: block !important;
+  }
+  .header-area .contact-info li {
+    font-size: 12px;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .header-area .contact-info li a {
+    font-size: 12px;
+  }
+  .header-area .contact-info li:last-child {
+    margin-bottom: 0;
+  }
+  /* navbar area */
+  .navbar .navbar-toggler {
+    position: absolute;
+    top: auto;
+    right: 14px;
+  }
+  .navbar .others-options {
+    position: absolute;
+    right: 55px;
+  }
+  .navbar .others-options.left-border::before {
+    display: none;
+  }
+  .navbar .others-options ul li {
+    margin-right: 10px;
+  }
+  .navbar .others-options ul li .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .navbar .others-options ul li .search-btn .search {
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .navbar .others-options .number {
+    display: none;
+  }
+  .navbar.new-nav .navbar-toggler .burger-menu span {
+    background-color: #fff !important;
+  }
+  /* family banner */
+  .family-banner-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .family-banner-area .h-shape-1 {
+    display: none;
+  }
+  .family-banner-area .social-icons {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .family-banner-content {
+    margin-bottom: 30px;
+  }
+  .family-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .family-banner-content .mb-4 {
+    margin-bottom: 25px !important;
+  }
+  .family-banner-content .fs-80 {
+    font-size: 25px;
+  }
+  .family-banner-content .banner-btn.gap-4 {
+    gap: 10px !important;
+  }
+  .family-banner-content .banner-btn .default-btn {
+    padding: 15px 20px 15px;
+  }
+  .family-banner-card {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .family-banner-card .h-image-1 {
+    width: 100%;
+  }
+  .banner-swiper-btn {
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+  }
+  .banner-swiper-btn .swiper-button-next {
+    left: -70px;
+    right: 0;
+    margin: auto;
+  }
+  .banner-swiper-btn .swiper-button-prev {
+    left: 0;
+    right: -70px;
+    margin: auto;
+  }
+  .banner-swiper-btn .family-pagination {
+    text-align: center;
+    bottom: 0;
+    top: 12px;
+  }
+  /* life insurance banner */
+  .life-insurance-banner-area {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .life-insurance-banner-area .container-fluid {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .life-insurance-banner-area .pt-5 {
+    padding-top: 0 !important;
+  }
+  .life-insurance-banner-area .social-link {
+    left: -15px;
+    background-color: transparent;
+  }
+  .life-insurance-banner-area .social-link.gap-5 {
+    gap: 15px !important;
+  }
+  .life-insurance-banner-area .social-link li {
+    font-size: 14px;
+  }
+  .life-insurance-banner-area .social-link li::before {
+    display: none;
+  }
+  .life-insurance-banner-area .social-link li a {
+    color: #fff;
+  }
+  .life-insurance-banner-content .fs-20 {
+    font-size: 16px;
+  }
+  .life-insurance-banner-content h1 {
+    margin-bottom: 25px;
+  }
+  .life-insurance-banner-content p {
+    margin-bottom: 30px;
+  }
+  .life-insurance-banner-content .circle-image {
+    right: auto;
+    left: 0;
+    bottom: 80px;
+    margin-bottom: 30px;
+  }
+  .life-insurance-banner-content .circle-image .c-group .a-shape-1 {
+    left: 0;
+    max-width: 50px;
+  }
+  .life-insurance-banner-content .insurance-btn.gap-4 {
+    gap: 10px !important;
+  }
+  .life-insurance-banner-content .insurance-btn .default-btn {
+    padding: 15px 20px 15px;
+  }
+  .title-content {
+    margin-bottom: 30px;
+  }
+  .life-banner-image .family-banner-card {
+    margin-top: 0;
+  }
+  .life-insurance-items .life-pagination {
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    transform: unset;
+    bottom: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .life-insurance-items .life-pagination .swiper-pagination-bullet {
+    margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  }
+  /* business banner h-3 */
+  .business-banner-area {
+    padding: 50px 0 50px;
+  }
+  .business-banner-area .b-image {
+    position: relative;
+  }
+  .business-banner-area .talk-card {
+    top: 0;
+    right: 0;
+    position: relative;
+    padding: 25px 20px;
+  }
+  .business-banner-content {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
+  .business-banner-content .fs-70 {
+    font-size: 25px;
+  }
+  .business-banner-content .fs-24 {
+    font-size: 16px;
+  }
+  .business-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .business-banner-content h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .business-banner-content h1 span {
+    padding-left: 50px;
+  }
+  .business-banner-content p.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .business-banner-content .banner-btn.gap-4 {
+    gap: 10px !important;
+  }
+  .business-banner-content .banner-btn .default-btn {
+    padding: 15px 20px 15px;
+  }
+  /* Car Banner banner */
+  .car-banner-area .car-content {
+    margin-left: 0;
+  }
+  .car-banner-area .all-shapes {
+    display: none;
+  }
+  .car-banner-area .car-content h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .car-banner-area .car-content p {
+    font-size: 16px;
+    color: #ddd;
+  }
+  .car-banner-area .car-content .h-btn {
+    margin-top: 25px;
+  }
+  .car-banner-area .car-content ul li {
+    margin-bottom: 10px;
+  }
+  .car-banner-area .car-image {
+    max-width: 100% !important;
+  }
+  .car-banner-area .car-image.one {
+    margin-top: 0;
+  }
+  .car-banner-area .common {
+    display: none;
+  }
+  /* health Banner banner */
+  .health-banner-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .health-banner-area .health-image {
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+  .health-banner-area .all-shapes {
+    display: none;
+  }
+  .health-banner-area .health-content {
+    margin-left: 0;
+  }
+  .health-banner-area .health-content h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .health-banner-area .health-content .health-btn.d-flex {
+    display: block !important;
+  }
+  .health-banner-area .health-content .health-btn .default-btn {
+    margin-bottom: 25px;
+  }
+  .health-banner-area .health-image .circle-image {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .health-banner-area .health-image .circle-image .arrow-right {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .health-banner-area .health-image .circle-image .c-group .a-shape-1 {
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+  }
+  /* page banner */
+  .page-banner-area {
+    padding: 60px 0 60px;
+  }
+  .page-banner-area .h-image-7 {
+    display: none;
+  }
+  .page-banner-area .h-image-8 {
+    display: none;
+  }
+  .page-banner-content h2 {
+    font-size: 30px;
+  }
+  .page-banner-content .pages-list {
+    gap: 25px;
+  }
+  .page-banner-content .pages-list li::before {
+    right: -15px;
+  }
+  /* services area */
+  .services-area .service-shape-1 {
+    display: none;
+  }
+  .services-card {
+    padding: 30px 30px;
+  }
+  .services-card .mb-5 {
+    margin-bottom: 50px !important;
+  }
+  .view-btn.mt-5 {
+    margin-top: 30px !important;
+  }
+  /* single services area h-2 */
+  .single-services-card {
+    padding-left: 10px;
+  }
+  .single-services-card.gap-5 {
+    gap: 15px !important;
+  }
+  .single-services-card.rounded-start-pill {
+    border-bottom-left-radius: 50px !important;
+    border-top-left-radius: 50px !important;
+  }
+  .single-services-card .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 44px;
+    border: 5px solid #eef2e4;
+    left: 0;
+  }
+  .single-services-card .icon img {
+    max-width: 30px;
+  }
+  .single-services-card .single-services-card-body {
+    padding: 20px 10px 20px 0;
+  }
+  /* business services area h-3 */
+  .business-services-card {
+    padding: 30px 30px;
+  }
+  /* about us area */
+  .about-us-area .about-us-image {
+    margin-right: 0;
+  }
+  .about-us-area .section-heading.ps-5 {
+    padding-left: 0 !important;
+  }
+  .about-us-area .section-heading h2 {
+    margin-right: 0;
+  }
+  .about-us-area .section-heading .a-image-2 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .about-us-area .a-shape-2 {
+    display: none;
+  }
+  .about-us-circle .circle-image {
+    top: 50%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .about-us-circle .c-group .a-shape-1 {
+    display: none;
+  }
+  /* about us area h-3 */
+  .about-inner-image {
+    height: 350px;
+  }
+  .about-inner-image .here-group {
+    right: 0;
+    bottom: 0;
+  }
+  .about-inner-content {
+    padding: 30px 20px;
+  }
+  .about-inner-content .skills .skill-name {
+    font-size: 14px;
+  }
+  .about-inner-content .skills .skill-bar .skill-percentage::before {
+    font-size: 14px;
+    top: -33px;
+  }
+  /* car about area h-4 */
+  .car-about-area {
+    padding-bottom: 50px;
+  }
+  .car-about-area .car-about-iamge::before {
+    display: none;
+  }
+  .car-about-area .car-about-iamge .icon-card {
+    top: 10px;
+    left: 0;
+    padding: 5px 15px;
+  }
+  .car-about-area .car-about-iamge .icon-card img {
+    max-width: 40px;
+  }
+  .car-about-area .car-about-iamge .icon-card h3 {
+    font-size: 16px;
+  }
+  .car-about-area .count-card {
+    bottom: 20px;
+    right: 20px;
+  }
+  .car-about-area .count-card .fun-fact-card {
+    padding: 20px 20px;
+  }
+  .car-about-area .count-card .fun-fact-card h3 {
+    font-size: 35px;
+  }
+  .car-about-area .a-shape-2 {
+    display: none;
+  }
+  .car-about-area .car-warp.mb-5 {
+    margin-bottom: 24px !important;
+  }
+  .car-about-area .car-btn .default-btn {
+    margin-bottom: 20px;
+  }
+  .car-about-area .car-btn.d-flex {
+    display: block !important;
+  }
+  /* health about area h-5 */
+  .health-about-area .h-image {
+    height: 400px;
+  }
+  .health-about-area .section-heading h2 {
+    font-size: 25px;
+  }
+  .health-about-area .health-card {
+    padding: 30px 25px;
+    background-color: var(--navy-color);
+  }
+  /* categories area */
+  .categories-area .section-heading.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .categories-area .categories-image {
+    margin-left: 0;
+  }
+  .categories-area .service-shape-1 {
+    display: none;
+  }
+  /* team area */
+  .team-area .a-shape-2 {
+    display: none;
+  }
+  .team-single-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  /* choose us area */
+  .choose-us-area .section-heading {
+    margin-right: 0;
+    margin-bottom: 30px !important;
+  }
+  .choose-us-area .choose-shape-1 {
+    display: none;
+  }
+  .choose-us-form {
+    padding: 20px 15px;
+  }
+  /* why choose us area h-2 */
+  .why-choose-us-area .section-heading .vector {
+    max-width: 230px;
+  }
+  .why-choose-us-area .mt-5 {
+    margin-top: 50px !important;
+  }
+  .why-choose-us-area .section-heading {
+    margin-right: 0;
+  }
+  /* car choose us area h-4 */
+  .car-choose-us-area .section-heading .vector {
+    max-width: 230px;
+  }
+  .car-choose-us-area .car-choose-image {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    margin-top: 25px;
+  }
+  .car-choose-us-area .car-choose-image .popup-video i {
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+  }
+  .car-choose-us-area .car-choose-image .popup-video::after {
+    left: -13px;
+    width: 100px;
+    height: 100px;
+  }
+  .car-choose-us-area .car-c-content h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .car-choose-us-area .car-c-content .warp-card i {
+    width: 70px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .car-choose-us-area .car-c-content .warp-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .car-choose-us-area .car-c-content .warp-card.gap-4 {
+    gap: 10px !important;
+  }
+  .car-choose-us-area .all-shapes {
+    display: none;
+  }
+  /* health choose us area h-4 */
+  .health-choose-us-area .h-content .mony-card.d-flex {
+    display: block !important;
+  }
+  .health-choose-us-area .h-content .mony-card .number {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .health-choose-us-area .h-image {
+    margin-left: 0;
+  }
+  .health-choose-us-area .h-image .insurance-card {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    padding: 20px 5px;
+  }
+  .health-choose-us-area .h-image .insurance-card p {
+    font-size: 16px;
+    color: var(--white);
+  }
+  /* news area */
+  .news-card .news-image {
+    height: 275px;
+  }
+  .news-card .news-card-body {
+    padding: 30px 20px;
+    margin-left: 0;
+  }
+  /* blog area h-2 */
+  .section-top-bar.mb-4 {
+    margin-bottom: 40px !important;
+  }
+  .section-top-bar .section-heading {
+    margin-bottom: 40px !important;
+  }
+  .section-top-bar .blog-slider-btn .swiper-button-next, .section-top-bar .blog-slider-btn .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .section-top-bar .blog-slider-btn .swiper-button-next i, .section-top-bar .blog-slider-btn .swiper-button-prev i {
+    font-size: 18px;
+  }
+  .section-top-bar .blog-slider-btn .swiper-button-next {
+    right: auto;
+    left: 45px;
+  }
+  .section-top-bar .blog-slider-btn .swiper-button-prev {
+    left: 0;
+    right: auto;
+  }
+  .blog-card .blog-card-body {
+    padding: 30px 20px;
+  }
+  .blog-card .blog-card-body .d-block {
+    display: inline-block !important;
+  }
+  .blog-card .blog-card-body .date-list {
+    margin-bottom: 20px;
+  }
+  .blog-card .blog-card-body .date-list.gap-4 {
+    gap: 10px !important;
+  }
+  .blog-card .blog-card-body .date-list li {
+    color: var(--paragraph);
+    font-size: 14px;
+  }
+  /*  health blog area h-5*/
+  .health-blog-area .b-topbar .text-end {
+    text-align: start !important;
+  }
+  .health-blog-area .health-blog-card .h-body {
+    padding: 25px 25px;
+  }
+  .health-blog-area .health-blog-card .h-body .gap-4 {
+    gap: 10px !important;
+  }
+  /* features area */
+  .features-area .g-0, .features-area .gy-0 {
+    --bs-gutter-y: 30px;
+  }
+  .features-card {
+    max-width: 100%;
+  }
+  .features-card::before {
+    right: 0;
+  }
+  /* car features area h-4 */
+  .car-features-area .car-features-warp {
+    margin-left: 0;
+  }
+  /* car bg area h-4 */
+  .car-bg-area .content h1 {
+    color: var(--white);
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .car-bg-area .content .d-flex {
+    display: block !important;
+  }
+  .car-bg-area .content .default-btn {
+    margin-bottom: 20px;
+  }
+  /* life features area h-2 */
+  .life-features-area .features-image {
+    text-align: center;
+  }
+  .life-features-area .features-1 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+  /* fun fact area */
+  .fun-fact-card .fs-70 {
+    font-size: 50px;
+  }
+  .fun-fact-card .fun-fact-circle {
+    display: none;
+  }
+  .fun-fact-row.g-4 {
+    --bs-gutter-x: 20px;
+  }
+  /* benefits area */
+  .benefits-area .benefits-btn .fs-18 {
+    font-size: 14px;
+  }
+  .benefits-area .benefits-btn .phone-call {
+    margin-right: 0;
+  }
+  .benefits-area .benefits-1 {
+    display: none;
+  }
+  .benefits-area .service-shape-1 {
+    display: none;
+  }
+  .benefits-image .pe-1 {
+    padding-right: 0 !important;
+  }
+  .benefits-image .benefits-group {
+    padding: 10px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    max-width: 150px;
+  }
+  .benefits-image .benefits-group .umbrella-1 {
+    max-width: 50px;
+    margin-bottom: 15px;
+  }
+  .benefits-image .benefits-group p {
+    font-size: 14px;
+  }
+  .benefits-card {
+    padding: 20px 20px;
+  }
+  /* life benefits area */
+  .life-benefits-area .benefits-btn .fs-18 {
+    font-size: 14px;
+  }
+  .life-benefits-area .benefits-btn .phone-call {
+    margin-right: 0;
+  }
+  .life-benefits-area .benefits-2 {
+    display: none;
+  }
+  .life-benefits-image .benefits-group {
+    max-width: 150px;
+    padding: 15px 10px;
+    left: 0;
+    bottom: 0;
+  }
+  .life-benefits-image .benefits-group .umbrella-1 {
+    max-width: 50px;
+  }
+  .life-benefits-image .benefits-group p {
+    font-size: 14px;
+  }
+  /* partner area */
+  .partner-area p {
+    margin-bottom: 30px;
+  }
+  /* testimonials area */
+  .testimonials-area {
+    padding: 50px 0;
+  }
+  .testimonials-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .testimonials-area .testimonial-shape-1 {
+    display: none;
+  }
+  .testimonials-items {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .testimonial-btn {
+    left: 105px;
+    margin-top: 0 !important;
+  }
+  .testimonials-card {
+    gap: 15px;
+  }
+  .testimonials-card .quote {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+  .testimonials-content {
+    margin-left: 0;
+  }
+  .testimonials-content .fs-40 {
+    font-size: 25px;
+  }
+  .testimonials-content .user-card {
+    margin-top: 0;
+    padding: 30px 0 30px 30px;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .testimonials-content .a-image-16 {
+    border-radius: 0;
+    margin: 25px 0;
+  }
+  .testimonials-content .title-warp {
+    padding: 0 0 0 0;
+  }
+  .testimonials-image {
+    height: 200px;
+  }
+  /* health testimonials area h-5*/
+  .health-testimonials-area {
+    padding-bottom: 50px;
+  }
+  .health-testimonials-area .choose-us-form {
+    padding: 30px 25px 30px;
+    height: 100%;
+  }
+  .health-testimonials-area .testimonials-card {
+    padding: 30px 25px 80px;
+  }
+  .health-testimonials-area .testimonials-card p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .health-testimonials-area .swiper-pagination-bullets, .health-testimonials-area .health-testimonials-area .swiper-pagination-bullets {
+    bottom: var(--swiper-pagination-bottom, 30px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
+  }
+  /* review area */
+  .review-card {
+    padding-bottom: 60px;
+  }
+  .review-card .fs-20 {
+    font-size: 16px;
+  }
+  .review-card .quote {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+  .review-items .swiper-button-next, .review-items .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    top: auto;
+    bottom: 20px;
+  }
+  .review-items .swiper-button-next {
+    left: 0;
+    right: -40px;
+    margin: auto;
+  }
+  .review-items .swiper-button-prev {
+    left: -40px;
+    right: 0;
+    margin: auto;
+  }
+  .review-items .review-card .quote {
+    line-height: 70px;
+  }
+  /* clients area h-3 */
+  .clients-area .review-items {
+    padding: 50px 15px;
+  }
+  .clients-area .review-card .mb-5 {
+    margin-bottom: 20px !important;
+  }
+  .clients-area .clientsButton .swiper-wrapper .swiper-slide {
+    width: 50px !important;
+  }
+  .clients-area .clientsButton .swiper-wrapper .swiper-slide img {
+    width: 50px;
+    height: 50px;
+  }
+  /* agent area */
+  .agent-card {
+    padding: 25px 20px;
+  }
+  .agent-card p {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .agent-card .agent-1 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 30px;
+  }
+  /* footer area */
+  .footer-area .ps-4 {
+    padding-left: 0 !important;
+  }
+  .footer-area .choose-shape-1 {
+    opacity: 0.4;
+  }
+  .footer-area .footer-shape {
+    display: none;
+  }
+  .footer-weight {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .footer-weight h3 {
+    margin-bottom: 20px;
+  }
+  .footer-weight .info-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .f-card {
+    padding-bottom: 30px;
+  }
+  .f-card::before {
+    top: 0;
+    width: 100%;
+  }
+  /* copyright area */
+  .copyright-area p {
+    text-align: center;
+  }
+  .copyright-area .social-icons.justify-content-end {
+    justify-content: center !important;
+  }
+  /* go top */
+  .go-top {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  /* talk to card */
+  .talk-card {
+    max-width: 100% !important;
+  }
+  .talk-to-card {
+    padding: 20px;
+    margin: 0;
+  }
+  /* progress area h-2 */
+  .progress-area .progress-warp .progress-1 {
+    display: none;
+  }
+  .progress-card {
+    padding: 30px 35px;
+    max-width: 100% !important;
+  }
+  .insurance-cost-card {
+    padding: 25px 20px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .insurance-cost-card span {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  .insurance-cost-card p {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  /* advice area h-3 */
+  .advice-area .advice-content {
+    animation: marquee 3s linear infinite forwards;
+  }
+  /* portfolio area h-3 */
+  .portfolio-content .pe-1 {
+    padding-right: 0 !important;
+  }
+  .portfolio-content .warp-inner.d-flex {
+    display: block !important;
+  }
+  .portfolio-content h3 {
+    margin: 15px 0 !important;
+  }
+  .portfolio-content .portfolio-image {
+    right: 0;
+    max-width: 80px;
+  }
+  /* app area h-3 */
+  .app-area .app-shape-1 {
+    display: none;
+  }
+  .app-area .app-shape {
+    display: none;
+  }
+  .app-area .section-heading .me-3 {
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  /* business graph area h-3 */
+  .business-graph-area .section-heading p {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .business-graph-area .graph-progress {
+    margin-top: 0;
+  }
+  /* contact us page */
+  .contact-inner {
+    padding: 25px 15px;
+  }
+  .contact-inner .map iframe {
+    height: 300px;
+  }
+  .contact-form span {
+    font-size: 15px;
+  }
+  /* sidebar */
+  .service-details-sidebar .p-1 {
+    padding: 20px !important;
+  }
+  .service-details-sidebar .tags ul li a {
+    padding: 5px 14px;
+    font-size: 14px;
+  }
+  /* blog details content */
+  .quote-card {
+    padding: 20px;
+  }
+  .quote-card .d-block {
+    display: inline-block !important;
+  }
+  .quote-card .quote-1 {
+    display: none;
+  }
+  .share-tag .tags {
+    text-align: center;
+    margin-bottom: 15px !important;
+  }
+  .share-tag .share {
+    text-align: center;
+  }
+  .r-comment.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .r-comment.d-flex {
+    display: block !important;
+  }
+  .r-comment .u-image-13 {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+  }
+  .r-comment.partTwo {
+    padding-left: 0;
+  }
+  /* service details content */
+  .service-details-content-card {
+    padding: 25px 20px;
+  }
+  .service-details-content-card .service-details-content-card-icon {
+    margin-bottom: 30px;
+  }
+  .service-details-content-card .service-details-content-card-icon::before {
+    display: none;
+  }
+  /* appointment page */
+  .appointment-image {
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+  /* single-testimonials-card h-4 */
+  .single-testimonials-card.one {
+    padding: 25px 25px 20px;
+  }
+  /* fs-80 */
+  .home-banner-area .home-content .sub-title {
+    font-size: 16px;
+    padding: 4px 12px;
+  }
+  .home-banner-area .home-content .default-btn {
+    padding: 12px 18px 12px;
+  }
+  .home-banner-area .home-content p {
+    margin-bottom: 30px;
+  }
+  .home-banner-area .home-content .mb-4 {
+    margin-bottom: 15px !important;
+  }
+  .home-banner-area .banner-shape {
+    display: none;
+  }
+  .home-banner-area .banner-shape1 {
+    display: none;
+  }
+  .home-banner-area .banner-shape2 {
+    display: none;
+  }
+  .fs-80 {
+    font-size: 25px;
+  }
+  /* secure image */
+  .secure-area .secure-image {
+    height: 350px;
+  }
+  .secure-area .secure-image .secure-body {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 20px;
+  }
+  .secure-area .secure-image .secure-body h3 {
+    font-size: 20px;
+  }
+  .secure-area .funfact-items {
+    padding: 25px;
+  }
+  /* */
+  .home-services-area .home-services-card {
+    padding: 25px;
+  }
+  /* */
+  .home-choose-area .section-heading .warp h4 {
+    font-size: 20px;
+  }
+  .home-choose-area .bg-shape {
+    display: none;
+  }
+  .home-choose-area .shape {
+    display: none;
+  }
+  .home-choose-area .a-shape-2 {
+    display: none;
+  }
+  /* */
+  .vedio-area .default-btn {
+    padding: 13px 18px 13px;
+  }
+  /* */
+  .home-review-area .review-image {
+    height: 300px;
+  }
+  .home-review-area .review-content {
+    padding: 25px 25px 70px;
+  }
+  .home-review-area .review-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  .home-review-area .review-content .author-info img {
+    width: 50px;
+    height: 50px;
+  }
+  .home-review-area .review-content .author-info h4 {
+    font-size: 20px;
+  }
+  .home-review-area .swiper-pagination {
+    left: 0;
+    text-align: center;
+  }
+  .home-review-area .swiper-pagination-bullets {
+    bottom: var(--swiper-pagination-bottom, 25px);
+  }
+}
+/* Min width 576px */
+/* Min width 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-120 {
+    padding-top: 60px;
+  }
+  .pb-120 {
+    padding-bottom: 60px;
+  }
+  .ptb-100 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  .fs-60 {
+    font-size: 40px;
+  }
+  /* Container Fluid */
+  .container-fluid.side-padding {
+    max-width: 720px;
+  }
+  .container-fluid.ws-padding {
+    max-width: 720px;
+  }
+  .container-fluid.lf-padding {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* navbar */
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 11px;
+  }
+  .navbar .others-options {
+    margin-right: 50px;
+  }
+  .navbar .others-options.left-border::before {
+    display: none;
+  }
+  .navbar.new-nav .navbar-toggler .burger-menu span {
+    background-color: #fff !important;
+  }
+  /* search modal */
+  .search-modal .modal-dialog {
+    max-width: 720px;
+  }
+  /* family banner */
+  .family-banner-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .family-banner-area .h-shape-1 {
+    display: none;
+  }
+  .family-banner-area .social-icons {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .family-banner-content {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .family-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .family-banner-content .fs-80 {
+    font-size: 50px;
+  }
+  .family-banner-card {
+    padding: 30px 30px 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .family-banner-card .h-image-1 {
+    width: 100%;
+  }
+  .family-banner-card .d-block {
+    display: inline-block !important;
+  }
+  .family-banner-card .family-banner-card-body {
+    padding: 30px 0;
+  }
+  .banner-swiper-btn {
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+  }
+  .banner-swiper-btn .swiper-button-next {
+    left: -70px;
+    right: 0;
+    margin: auto;
+  }
+  .banner-swiper-btn .swiper-button-prev {
+    left: 0;
+    right: -70px;
+    margin: auto;
+  }
+  .banner-swiper-btn .family-pagination {
+    text-align: center;
+    bottom: 0;
+    top: 12px;
+  }
+  /* life banner h-2 */
+  .life-insurance-banner-area {
+    padding-top: 70px;
+  }
+  .life-insurance-banner-content .circle-image .arrow-right {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .life-insurance-banner-content .circle-image .c-group .a-shape-1 {
+    left: 0;
+    max-width: 90px;
+  }
+  .life-banner-image .family-banner-card {
+    margin-top: -60px;
+    padding: 15px 15px 0;
+  }
+  .life-banner-image .family-banner-card .card-list li {
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+  .life-insurance-items .life-pagination {
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    transform: unset;
+    bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .life-insurance-items .life-pagination .swiper-pagination-bullet {
+    margin: 0px var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  }
+  /* business banner h-3 */
+  .business-banner-area {
+    padding: 60px 0 60px;
+  }
+  .business-banner-area .talk-card {
+    top: 360px;
+    right: 35px;
+  }
+  .business-banner-area .b-image {
+    position: relative;
+    bottom: 0;
+  }
+  .business-banner-content .fs-70 {
+    font-size: 50px;
+  }
+  .business-banner-content .fs-24 {
+    font-size: 16px;
+  }
+  .business-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .business-banner-content h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .business-banner-content h1 span {
+    padding-left: 100px;
+  }
+  .business-banner-content p.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .business-banner-content .banner-btn.gap-4 {
+    gap: 10px !important;
+  }
+  .business-banner-content .banner-btn .default-btn {
+    padding: 15px 20px 15px;
+  }
+  /* car banner h-4 */
+  .car-about-area {
+    padding-bottom: 60px;
+  }
+  .car-about-area .car-about-iamge {
+    max-width: 100% !important;
+  }
+  .car-about-area .car-about-iamge::before {
+    display: none;
+  }
+  .car-about-area .car-about-iamge .icon-card {
+    left: -28px;
+  }
+  .car-about-area .a-shape-2 {
+    display: none;
+  }
+  /* health Banner banner */
+  .health-banner-area {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .health-banner-area .health-image {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .health-banner-area .all-shapes {
+    display: none;
+  }
+  .health-banner-area .health-content {
+    margin-left: 0;
+  }
+  .health-banner-area .health-content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .health-banner-area .health-image .circle-image {
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .health-banner-area .health-image .circle-image .arrow-right {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .health-banner-area .health-image .circle-image .c-group .a-shape-1 {
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+  }
+  /* Car Banner banner */
+  .car-banner-area .car-content {
+    margin-left: 0;
+  }
+  .car-banner-area .all-shapes {
+    display: none;
+  }
+  .car-banner-area .car-content {
+    text-align: center;
+  }
+  .car-banner-area .car-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .car-banner-area .car-content p {
+    font-size: 18px;
+    color: #ddd;
+  }
+  .car-banner-area .car-content .h-btn {
+    margin-top: 25px;
+  }
+  .car-banner-area .car-image {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+  .car-banner-area .car-image.one {
+    margin-top: 0;
+  }
+  .car-banner-area .common {
+    display: none;
+  }
+  /* page banner */
+  .page-banner-area {
+    padding: 80px 0 80px;
+  }
+  .page-banner-area .h-image-7 {
+    right: 40px;
+    max-width: 200px;
+  }
+  .page-banner-area .h-image-8 {
+    display: none;
+  }
+  /* services area */
+  .services-area .service-shape-1 {
+    display: none;
+  }
+  /* about us area */
+  .about-us-area .about-us-image {
+    margin-right: 0;
+  }
+  .about-us-area .about-us-image .a-image-1 {
+    width: 100%;
+  }
+  .about-us-area .section-heading.ps-5 {
+    padding-left: 0 !important;
+  }
+  .about-us-area .section-heading h2 {
+    margin-right: 0;
+  }
+  .about-us-area .section-heading .a-image-2 {
+    right: 0;
+    bottom: 0;
+  }
+  .about-us-area .a-shape-2 {
+    display: none;
+  }
+  .about-us-circle .a-image-2 {
+    width: 100%;
+  }
+  .about-us-circle .circle-image {
+    top: 50%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .about-us-circle .c-group .a-shape-1 {
+    display: none;
+  }
+  /* about us area h-3 */
+  .about-inner-image {
+    height: 350px;
+  }
+  .about-inner-image .here-group {
+    right: 30px;
+    bottom: 30px;
+  }
+  .about-inner-content {
+    padding: 30px 30px;
+  }
+  /* health about area h-5 */
+  .health-about-area .h-image {
+    height: 800px;
+  }
+  .health-about-area .section-heading h2 {
+    font-size: 35px;
+  }
+  /* categories area */
+  .categories-area .section-heading.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .categories-area .categories-image {
+    margin-left: 0;
+  }
+  .categories-area .service-shape-1 {
+    display: none;
+  }
+  .categories-content {
+    max-width: 100% !important;
+  }
+  /* team area */
+  .team-area .a-shape-2 {
+    display: none;
+  }
+  /* choose us area */
+  .choose-us-area {
+    padding-bottom: 60px;
+  }
+  .choose-us-area .section-heading {
+    margin-right: 0;
+    margin-bottom: 30px !important;
+  }
+  .choose-us-area .choose-shape-1 {
+    display: none;
+  }
+  .choose-us-area .a-image-4 {
+    position: relative;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  /* why choose us area h-3 */
+  .car-choose-us-area .car-choose-image {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+  }
+  .car-choose-us-area .car-choose-image .popup-video i {
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+  }
+  .car-choose-us-area .car-choose-image .popup-video::after {
+    left: -13px;
+    width: 100px;
+    height: 100px;
+  }
+  .car-choose-us-area .car-c-content h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  .car-choose-us-area .all-shapes {
+    display: none;
+  }
+  /* health choose us area h-5 */
+  .health-choose-us-area .h-content .mony-card .number {
+    width: 90px;
+  }
+  .health-choose-us-area .h-image {
+    margin-left: 0;
+  }
+  .health-choose-us-area .h-image .insurance-card {
+    right: 0;
+  }
+  /* features area */
+  .features-area .g-0, .features-area .gy-0, .features-area .gx-0 {
+    --bs-gutter-y: 30px;
+    --bs-gutter-x: 24px;
+  }
+  .features-card {
+    max-width: 100%;
+  }
+  .features-card::before {
+    right: 0;
+  }
+  /* car features area h-4 */
+  .car-features-area .car-features-warp {
+    margin-left: 0;
+  }
+  /* life features area h-2 */
+  .life-features-area .features-image {
+    text-align: center;
+  }
+  .life-features-area .features-1 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+  /* car bg area h-4 */
+  .car-bg-area .content h1 {
+    color: var(--white);
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  /* fun fact area */
+  .fun-fact-card .fun-fact-circle {
+    display: none;
+  }
+  .fun-fact-row.g-4 {
+    --bs-gutter-x: 30px;
+  }
+  /* benefits area */
+  .benefits-area .section-heading {
+    max-width: 100% !important;
+  }
+  .benefits-area .benefits-1 {
+    display: none;
+  }
+  .benefits-area .service-shape-1 {
+    display: none;
+  }
+  .benefits-image .pe-1 {
+    padding-right: 0 !important;
+  }
+  /* life benefits area h-2 */
+  .life-benefits-area .section-heading {
+    max-width: 100% !important;
+  }
+  .life-benefits-area .benefits-2 {
+    display: none;
+  }
+  .life-benefits-image .benefits-group {
+    left: 0;
+  }
+  /* partner area */
+  .partner-area p {
+    margin-bottom: 30px;
+  }
+  .partner-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* testimonials area */
+  .testimonials-area {
+    padding: 60px 0;
+  }
+  .testimonials-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .testimonials-area .testimonial-shape-1 {
+    display: none;
+  }
+  .testimonials-items {
+    max-width: 100% !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .testimonial-btn {
+    margin-top: 0 !important;
+  }
+  .testimonials-content {
+    margin-left: 0;
+  }
+  .testimonials-content .user-card {
+    margin-top: 0;
+    padding: 30px 0 30px 30px;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .testimonials-content .a-image-16 {
+    border-radius: 0;
+    margin: 25px 0;
+  }
+  .testimonials-content .title-warp {
+    padding: 0 0 0 0;
+    max-width: 100% !important;
+  }
+  .testimonials-image {
+    height: 475px;
+  }
+  /* review area h-2 */
+  .review-items .swiper-button-next, .review-items .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 86%);
+  }
+  /* clients area h-3 */
+  .clients-area .review-items {
+    padding: 60px 20px;
+  }
+  .clients-area .clientsButton .swiper-wrapper .swiper-slide {
+    width: 50px !important;
+  }
+  .clients-area .clientsButton .swiper-wrapper .swiper-slide img {
+    width: 50px;
+    height: 50px;
+  }
+  .clients-area .review-items .swiper-button-next, .clients-area .review-items .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    top: var(--swiper-navigation-top-offset, 94%);
+  }
+  /* blog area h-2 */
+  .blog-card .blog-card-body {
+    padding: 30px 20px;
+  }
+  .blog-card .blog-card-body .d-block {
+    display: inline-block !important;
+  }
+  /* footer area */
+  .footer-area .ps-4 {
+    padding-left: 0 !important;
+  }
+  .footer-area .choose-shape-1 {
+    opacity: 0.5;
+  }
+  .footer-weight {
+    padding-bottom: 0;
+    margin-bottom: 35px;
+  }
+  .footer-weight h3 {
+    margin-bottom: 20px;
+  }
+  .f-card {
+    padding-bottom: 30px;
+  }
+  .f-card::before {
+    top: 0;
+    width: 100%;
+  }
+  /* go top */
+  .go-top {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  /* talk to card h-2 */
+  .talk-card {
+    max-width: 100% !important;
+  }
+  .talk-to-card {
+    padding: 30px;
+    margin: 0;
+  }
+  .talk-to-card .image-content {
+    padding: 5px 0;
+  }
+  /* progress area h-2 */
+  .progress-warp {
+    margin-bottom: 30px;
+    max-width: 100% !important;
+  }
+  .progress-card {
+    padding: 20px 20px;
+    max-width: 100% !important;
+  }
+  .insurance-cost-card {
+    margin-left: 0;
+  }
+  .insurance-cost-card span {
+    padding-left: 50px;
+  }
+  .insurance-cost-card p {
+    padding-left: 50px;
+  }
+  /* award area h-3 */
+  .award-card .container {
+    max-width: 720px !important;
+  }
+  .portfolio-content .pe-1 {
+    padding-right: 150px !important;
+  }
+  .portfolio-content .portfolio-image {
+    right: 250px;
+    max-width: 100px;
+  }
+  /* app area h-3 */
+  .app-area .app-shape-1 {
+    right: 0;
+  }
+  .app-area .app-shape {
+    right: 0;
+  }
+  .app-area .section-heading h2 {
+    font-size: 30px;
+  }
+  .app-area .section-heading .me-3 {
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  /* business graph area h-3 */
+  .business-graph-area .section-heading {
+    max-width: 100% !important;
+  }
+  .business-graph-area .graph-progress {
+    margin-top: 0;
+  }
+  .graph-image {
+    max-width: 100% !important;
+  }
+  .graph-image img {
+    width: 100%;
+  }
+  /* contact us page */
+  .contact-form {
+    max-width: 100% !important;
+  }
+  /* blog details page */
+  .quote-card .d-block {
+    display: inline-block !important;
+  }
+  .quote-card .quote-1 {
+    right: 30px;
+    max-width: 50px;
+  }
+  .r-comment.partTwo {
+    padding-left: 0;
+  }
+  /* appointment page */
+  .appointment-image {
+    width: 100%;
+    height: 785px;
+    border-radius: 10px;
+    margin-left: 0;
+  }
+  /* single-testimonials-card h-4 */
+  .single-testimonials-card.one {
+    padding: 25px 25px 20px;
+  }
+  .health-testimonials-area {
+    padding-bottom: 60px;
+  }
+  /* home 4 */
+  .fs-80 {
+    font-size: 55px;
+  }
+  .home-banner-area .banner-shape {
+    display: none;
+  }
+  .home-banner-area .banner-shape1 {
+    display: none;
+  }
+  .home-banner-area .banner-shape2 {
+    display: none;
+  }
+  /* secure image */
+  .secure-area .secure-image {
+    height: 600px;
+  }
+  .secure-area .funfact-items {
+    padding: 50px;
+  }
+  /* review image */
+  .home-review-area .review-image {
+    height: 600px;
+  }
+}
+/* Min width 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Section Padding */
+  .ptb-120 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-120 {
+    padding-top: 80px;
+  }
+  .pb-120 {
+    padding-bottom: 80px;
+  }
+  .ptb-100 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-100 {
+    padding-top: 80px;
+  }
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+  /* Container Fluid */
+  .container-fluid.side-padding {
+    max-width: 960px;
+  }
+  .container-fluid.ws-padding {
+    max-width: 960px;
+  }
+  .container-fluid.lf-padding {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* navbar */
+  .navbar .navbar-nav {
+    margin-right: 40px;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar .others-options.left-border::before {
+    left: -18px;
+  }
+  .navbar .others-options .number {
+    display: none;
+  }
+  /* family banner */
+  .family-banner-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .family-banner-area .h-shape-1 {
+    bottom: 45px;
+    left: 40%;
+  }
+  .family-banner-content {
+    max-width: 100% !important;
+  }
+  .family-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .family-banner-content .fs-80 {
+    font-size: 55px;
+  }
+  .family-banner-card {
+    padding: 20px 20px 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .family-banner-card .h-image-1 {
+    width: 100%;
+  }
+  /* life banner */
+  .life-insurance-banner-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .life-banner-image .family-banner-card {
+    margin-top: -75px;
+  }
+  .life-insurance-items .life-pagination {
+    right: 0;
+  }
+  /* business banner h-3 */
+  .business-banner-area {
+    padding: 120px 0 120px;
+  }
+  .business-banner-area .talk-card {
+    top: auto;
+    right: 30px;
+    bottom: 0;
+  }
+  .business-banner-area .talk-card.bg-white {
+    background-color: var(--title-color) !important;
+  }
+  .business-banner-content {
+    padding-bottom: 0;
+  }
+  .business-banner-content .fs-70 {
+    font-size: 50px;
+  }
+  .business-banner-content .fs-24 {
+    font-size: 16px;
+  }
+  .business-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .business-banner-content h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .business-banner-content h1 span {
+    padding-left: 100px;
+  }
+  .business-banner-content p.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .business-banner-content .banner-btn.gap-4 {
+    gap: 10px !important;
+  }
+  .business-banner-content .banner-btn .default-btn {
+    padding: 15px 20px 15px;
+  }
+  /* car banner h-4 */
+  .car-banner-area .car-content h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .car-banner-area .car-content p {
+    font-size: 16px;
+  }
+  .car-banner-area .car-content .h-btn {
+    margin-top: 25px;
+  }
+  .car-banner-area .common {
+    top: 25px;
+    left: 25%;
+    font-size: 70px;
+  }
+  /* health Banner banner h-5*/
+  .health-banner-area {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .health-banner-area .health-image {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  .health-banner-area .all-shapes {
+    display: none;
+  }
+  .health-banner-area .health-content {
+    margin-left: 0;
+  }
+  .health-banner-area .health-content h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+  }
+  .health-banner-area .health-image .circle-image {
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  /* page banner */
+  .page-banner-area .h-image-7 {
+    right: 40px;
+    max-width: 300px;
+  }
+  .page-banner-area .h-image-8 {
+    right: 0;
+    max-width: 400px;
+  }
+  /* services area */
+  .services-area .service-shape-1 {
+    display: none;
+  }
+  /* single services area h-2 */
+  .single-services-card.gap-5 {
+    gap: 30px !important;
+  }
+  .single-services-card .single-services-card-body {
+    padding: 20px 20px 20px 0;
+  }
+  /* about us area */
+  .about-us-area .about-us-image {
+    margin-right: 0;
+  }
+  .about-us-area .section-heading.ps-5 {
+    padding-left: 0 !important;
+  }
+  .about-us-area .section-heading h2 {
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .about-us-area .section-heading .a-image-2 {
+    bottom: 0;
+    right: 0;
+  }
+  .about-us-area .a-shape-2 {
+    left: 15%;
+  }
+  /* about us area h-3 */
+  .about-inner-image {
+    height: 700px;
+  }
+  .about-inner-image .here-group {
+    right: 30px;
+    bottom: 30px;
+  }
+  .about-inner-content {
+    padding: 30px 30px;
+  }
+  /* car about h-4 */
+  .car-about-area {
+    padding-bottom: 80px;
+  }
+  .car-about-area .section-heading h2 {
+    font-size: 32px;
+  }
+  .car-about-area .car-about-iamge {
+    max-width: 425px !important;
+  }
+  .car-about-area .car-about-iamge::before {
+    top: 70px;
+    right: -25px;
+  }
+  .car-about-area .car-about-iamge .icon-card {
+    top: 25px;
+    left: -20px;
+  }
+  .car-about-area .a-shape-2 {
+    display: none;
+  }
+  .car-about-area .car-about-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .car-about-area .car-about-content ul li {
+    font-size: 14px;
+  }
+  .car-about-area .car-about-content .car-warp.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  /* health about area h-5 */
+  .health-about-area .section-heading h2 {
+    font-size: 25px;
+  }
+  .health-about-area .health-card {
+    padding: 25px 25px;
+  }
+  /* categories area */
+  .categories-area .section-heading.mb-5 {
+    margin-bottom: 30px !important;
+  }
+  .categories-area .categories-image {
+    margin-left: 0;
+    text-align: center;
+  }
+  .categories-area .service-shape-1 {
+    display: none;
+  }
+  .categories-content {
+    max-width: 100% !important;
+  }
+  /* team area */
+  .team-area .a-shape-2 {
+    display: none;
+  }
+  /* choose us area */
+  .choose-us-form {
+    padding: 30px 20px;
+  }
+  /* why choose us area h-3 */
+  .car-choose-us-area .car-choose-image {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 660px;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+  }
+  .car-choose-us-area .car-c-content h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .car-choose-us-area .car {
+    bottom: 80px;
+    left: 30%;
+    max-width: 130px;
+  }
+  /* health choose us area h-5 */
+  .health-choose-us-area .section-heading h2 {
+    font-size: 28px;
+  }
+  .health-choose-us-area .h-content .mony-card .number {
+    width: 145px;
+  }
+  .health-choose-us-area .h-image {
+    margin-left: 0;
+  }
+  .health-choose-us-area .h-image .insurance-card {
+    right: 0;
+  }
+  /* news area */
+  .news-card .news-card-body {
+    padding: 50px 60px;
+  }
+  /*  health blog area h-5*/
+  .health-blog-area .health-blog-card .h-body {
+    padding: 25px 25px;
+  }
+  .health-blog-area .health-blog-card .h-body .gap-4 {
+    gap: 10px !important;
+  }
+  /* blog area h-2 */
+  .blog-card .blog-card-body {
+    padding: 30px 20px;
+  }
+  .blog-card .blog-card-body .d-block {
+    display: inline-block !important;
+  }
+  .blog-card .blog-card-body .date-list {
+    margin-bottom: 20px;
+  }
+  .blog-card .blog-card-body .date-list.gap-4 {
+    gap: 10px !important;
+  }
+  .blog-card .blog-card-body .date-list li {
+    color: var(--paragraph);
+    font-size: 14px;
+  }
+  /* features area */
+  .features-area .g-0, .features-area .gx-0 {
+    --bs-gutter-x: 24px;
+  }
+  .features-card {
+    max-width: 100%;
+  }
+  .features-card::before {
+    right: 0;
+  }
+  /* car features area h-4 */
+  .car-features-area .car-features-warp {
+    margin-left: 0;
+  }
+  /* life features area h-2 */
+  .life-features-area .features-image {
+    text-align: center;
+  }
+  .life-features-area .features-1 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+  /* fun fact area */
+  .fun-fact-card .fs-70 {
+    font-size: 60px;
+  }
+  .fun-fact-card .fun-fact-circle {
+    display: none;
+  }
+  .fun-fact-card p img {
+    max-width: 50px;
+  }
+  .fun-fact-row.g-4 {
+    --bs-gutter-x: 24px;
+  }
+  /* benefits area */
+  .benefits-area .benefits-1 {
+    display: none;
+  }
+  .benefits-card {
+    padding: 20px 20px;
+  }
+  /* life benefits area h-2 */
+  .life-benefits-area .section-heading {
+    max-width: 100% !important;
+  }
+  .life-benefits-area .section-heading h2 {
+    font-size: 34px;
+  }
+  .life-benefits-area .section-heading .benefits-list {
+    font-size: 14px;
+  }
+  .life-benefits-area .benefits-2 {
+    display: none;
+  }
+  .life-benefits-image .benefits-group {
+    left: 35px;
+  }
+  .review-items .review-card .quote {
+    line-height: 64px;
+  }
+  /* partner area */
+  .partner-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* testimonials area */
+  .testimonials-area {
+    padding: 80px 0;
+  }
+  .testimonials-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .testimonials-area .testimonial-shape-1 {
+    display: none;
+  }
+  .testimonials-items {
+    max-width: 100% !important;
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+  .testimonial-btn {
+    margin-top: 40px !important;
+  }
+  .testimonials-content {
+    margin-left: 0;
+  }
+  .testimonials-content .user-card {
+    margin-left: 0;
+    border-radius: 0;
+  }
+  /* health testimonials area h-5*/
+  .health-testimonials-area .choose-us-form {
+    padding: 30px 25px 30px;
+    height: 100%;
+  }
+  .health-testimonials-area .testimonials-card {
+    padding: 30px 25px 80px;
+  }
+  .health-testimonials-area .swiper-pagination-bullets, .health-testimonials-area .health-testimonials-area .swiper-pagination-bullets {
+    bottom: var(--swiper-pagination-bottom, 30px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0;
+    width: 100%;
+  }
+  /* review area */
+  .review-card .quote {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+  .review-items .swiper-button-next, .review-items .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  .review-items .swiper-button-next {
+    left: auto;
+    right: 0;
+  }
+  .review-items .swiper-button-prev {
+    left: 0px;
+    right: auto;
+  }
+  /* footer area */
+  .footer-weight {
+    padding-bottom: 0;
+    margin-bottom: 100px;
+  }
+  .f-card {
+    padding-bottom: 30px;
+  }
+  .f-card::before {
+    top: 0;
+    width: 100%;
+  }
+  /* go top */
+  .go-top {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  /* talk to card h-2 */
+  .talk-card {
+    max-width: 100% !important;
+  }
+  .talk-to-card {
+    padding: 30px;
+    margin: 0;
+  }
+  .talk-to-card p {
+    margin-bottom: 50px;
+  }
+  .talk-to-card .image-content {
+    padding: 0 0;
+  }
+  /* agent area h-2 */
+  .agent-card .agent-1 {
+    right: 0;
+    max-width: 190px;
+  }
+  /* progress area h-2 */
+  .progress-card {
+    padding: 20px 20px;
+    max-width: 100% !important;
+  }
+  .insurance-cost-card {
+    margin-left: 0;
+  }
+  .insurance-cost-card span {
+    padding-left: 40px;
+  }
+  .insurance-cost-card p {
+    padding-left: 40px;
+  }
+  /* app area h-3 */
+  .app-area .container {
+    max-width: 960px !important;
+  }
+  .app-area .app-shape-1 {
+    right: 0;
+  }
+  .app-area .section-heading .me-3 {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+  /* business graph area h-3 */
+  .business-graph-area .section-heading {
+    max-width: 100% !important;
+  }
+  .business-graph-area .section-heading h2 {
+    font-size: 30px;
+  }
+  .business-graph-area .section-heading p {
+    margin-bottom: 30px;
+  }
+  .business-graph-area .section-heading .percent {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  .business-graph-area .graph-progress {
+    margin-top: -20px;
+  }
+  .graph-image {
+    max-width: 100% !important;
+  }
+  .graph-image img {
+    width: 100%;
+  }
+  /* contact page */
+  .contact-inner {
+    padding: 45px 30px;
+  }
+  /* blog details page */
+  .quote-card .d-block {
+    display: inline-block !important;
+  }
+  .quote-card .quote-1 {
+    right: 30px;
+    max-width: 50px;
+  }
+  /* service details content */
+  .service-details-content-card .service-details-content-card-icon::before {
+    display: none;
+  }
+  /* appointment page */
+  .appointment-image {
+    width: 100%;
+    height: 613px;
+  }
+  .fs-80 {
+    font-size: 50px;
+    line-height: 1.16;
+  }
+  .home-banner-area {
+    padding-bottom: 80px;
+  }
+  .home-banner-area .home-content p {
+    margin-bottom: 30px;
+  }
+  .home-banner-area .home-content .funfact-card .icon i {
+    font-size: 60px;
+  }
+  .home-banner-area .home-content .funfact-card p {
+    font-size: 13px;
+  }
+  .home-banner-area .home-content .funfact-card h2 {
+    font-size: 35px;
+  }
+  .home-banner-area .home-content .funfact-card .gap-4 {
+    gap: 5px !important;
+  }
+  /* secure area */
+  .secure-area .funfact-items {
+    padding: 40px;
+  }
+  .secure-area .funfact-items .content p {
+    font-size: 15px;
+  }
+  /* home review area */
+  .home-review-area .review-content {
+    padding: 30px;
+  }
+  .home-review-area .review-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  .home-review-area .review-content .author-info h4 {
+    font-size: 25px;
+  }
+  .home-review-area .review-content .author-info img {
+    width: 70px;
+    height: 70px;
+  }
+  .home-review-area .swiper-pagination-bullets {
+    bottom: var(--swiper-pagination-bottom, 50px);
+  }
+  .home-review-area .swiper-pagination {
+    left: -25px;
+  }
+  /* home choose area */
+  .home-choose-area .section-heading .warp h4 {
+    font-size: 20px;
+  }
+}
+/* Min width 1200px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* Container Fluid */
+  .container-fluid.side-padding {
+    max-width: 1140px;
+  }
+  .container-fluid.ws-padding {
+    max-width: 1140px;
+  }
+  .container-fluid.lf-padding {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* navbar */
+  .navbar .navbar-nav .nav-item {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  /* family banner */
+  .family-banner-area {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .family-banner-content {
+    max-width: 100% !important;
+  }
+  .family-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .family-banner-content .fs-80 {
+    font-size: 70px;
+  }
+  .family-banner-card {
+    padding: 20px 20px 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .family-banner-card .h-image-1 {
+    width: 100%;
+  }
+  /* business banner h-3 */
+  .business-banner-area {
+    padding: 120px 0 120px;
+  }
+  .business-banner-area .talk-card {
+    top: auto;
+    right: 50px;
+    bottom: 0;
+  }
+  .business-banner-area .talk-card.bg-white {
+    background-color: var(--title-color) !important;
+  }
+  .business-banner-content {
+    padding-bottom: 0;
+  }
+  .business-banner-content.ps-5 {
+    padding-left: 0 !important;
+  }
+  .business-banner-content .fs-70 {
+    font-size: 60px;
+  }
+  .business-banner-content h1 {
+    font-size: 90px;
+    margin-bottom: 50px;
+  }
+  /* car banner h-4 */
+  .car-banner-area .car-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .car-banner-area .car-content p {
+    font-size: 16px;
+  }
+  .car-banner-area .car-content .h-btn {
+    margin-top: 25px;
+  }
+  .car-banner-area .common {
+    top: 25px;
+    left: 25%;
+    font-size: 80px;
+  }
+  /* health Banner banner h-5*/
+  .health-banner-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .health-banner-area .health-image {
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  .health-banner-area .all-shapes {
+    display: none;
+  }
+  .health-banner-area .health-content {
+    margin-left: 0;
+  }
+  .health-banner-area .health-image .circle-image {
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  /* car about area h-4 */
+  .car-about-area .a-shape-2 {
+    right: 20px;
+  }
+  .car-about-area .car-about-iamge::before {
+    top: 100px;
+    right: -45px;
+  }
+  /* page banner */
+  .page-banner-area .h-image-7 {
+    right: 50px;
+    max-width: 350px;
+  }
+  .page-banner-area .h-image-8 {
+    right: 50px;
+    max-width: 450px;
+  }
+  /* services area */
+  .services-area .service-shape-1 {
+    right: 100px;
+  }
+  .services-card {
+    padding: 25px 20px;
+  }
+  .services-card .mb-5 {
+    margin-bottom: 50px !important;
+  }
+  /* Car services area h-4 */
+  .car-services-area .car-service-c {
+    padding: 30px 25px;
+  }
+  /* business services area h-3 */
+  .business-services-card {
+    padding: 30px 30px;
+  }
+  /* about us area */
+  .about-us-area .about-us-image {
+    margin-right: 0;
+  }
+  .about-us-area .section-heading.ps-5 {
+    padding-left: 0 !important;
+  }
+  .about-us-area .section-heading .a-image-2 {
+    right: 0;
+  }
+  .about-us-area .a-shape-2 {
+    left: 15%;
+  }
+  /* categories area */
+  .categories-area {
+    padding-bottom: 120px;
+  }
+  .categories-area .categories-image {
+    margin-left: 0;
+    text-align: center;
+  }
+  .categories-area .service-shape-1 {
+    display: none;
+  }
+  .categories-content {
+    max-width: 100% !important;
+  }
+  .categories-card {
+    padding: 25px 24px;
+  }
+  /* features area */
+  .features-area .g-0, .features-area .gx-0 {
+    --bs-gutter-x: 24px;
+  }
+  /* life features area */
+  .life-features-area .features-1 {
+    top: -30px;
+  }
+  .features-card::before {
+    right: -30px;
+  }
+  /* car features area h-4 */
+  .car-features-area .car-features-warp {
+    margin-left: 0;
+  }
+  .car-features-area .car-features-warp .card-features-card {
+    padding: 25px 20px;
+  }
+  .car-features-area .car-features-warp .card-features-card h4 {
+    font-size: 18px;
+  }
+  /* fun fact area */
+  .fun-fact-card .fs-70 {
+    font-size: 60px;
+  }
+  .fun-fact-card .fun-fact-circle {
+    display: none;
+  }
+  .fun-fact-card p img {
+    max-width: 50px;
+  }
+  .fun-fact-row.g-4 {
+    --bs-gutter-x: 60px;
+  }
+  /* benefits area */
+  .benefits-area .benefits-1 {
+    display: none;
+  }
+  .benefits-area .benefits-list {
+    font-size: 14px;
+  }
+  /* life benefits area h-2 */
+  .life-benefits-area .benefits-2 {
+    display: none;
+  }
+  .life-benefits-image .benefits-group {
+    left: 0;
+  }
+  /* partner area */
+  .partner-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* talk to card h-2 */
+  .talk-card {
+    max-width: 100% !important;
+  }
+  .talk-to-card {
+    padding: 30px;
+    margin: 0;
+  }
+  .talk-to-card p {
+    margin-bottom: 50px;
+  }
+  .talk-to-card .image-content {
+    padding: 0 0;
+  }
+  /* progress area h-2 */
+  .progress-card {
+    padding: 20px 20px;
+    max-width: 100% !important;
+  }
+  .insurance-cost-card {
+    margin-left: 0;
+  }
+  .insurance-cost-card span {
+    padding-left: 50px;
+  }
+  .insurance-cost-card p {
+    padding-left: 50px;
+  }
+  /* app area h-3 */
+  .app-image .app-shape-1 {
+    right: -50px;
+  }
+  /* business graph area h-3 */
+  .business-graph-area .section-heading {
+    max-width: 100% !important;
+  }
+  .business-graph-area .section-heading h2 {
+    font-size: 35px;
+  }
+  .business-graph-area .section-heading p {
+    margin-bottom: 50px;
+  }
+  .business-graph-area .section-heading .percent {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  .business-graph-area .graph-progress {
+    margin-top: -30px;
+  }
+  /* blog details page */
+  .quote-card .d-block {
+    display: inline-block !important;
+  }
+  .quote-card .quote-1 {
+    max-width: 50px;
+  }
+  /* footer area */
+  .f-card::before {
+    width: 100%;
+  }
+  /* go top */
+  .go-top {
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  /* appointment page */
+  .appointment-image {
+    width: 100%;
+    height: 672px;
+  }
+  /* pricing page */
+  .pricing-card .pricing-card-header {
+    padding: 20px;
+  }
+  .pricing-card .pricing-card-body {
+    padding: 20px;
+  }
+  /* error page */
+  .error-area {
+    padding-top: 60px;
+  }
+  /* car choose us */
+  .car-choose-us-area .car-c-content h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .car-choose-us-area .car-c-content p {
+    font-size: 14px;
+  }
+  /* health choose us area h-5 */
+  .health-choose-us-area .section-heading h2 {
+    font-size: 35px;
+  }
+  .health-choose-us-area .h-content .mony-card .number {
+    width: 120px;
+  }
+  .health-choose-us-area .h-image {
+    margin-left: 0;
+  }
+  .health-choose-us-area .h-image .insurance-card {
+    right: 0;
+  }
+  /* home 4 */
+  .home-banner-area {
+    padding-bottom: 100px;
+  }
+  /* secure area */
+  .secure-area .funfact-items {
+    padding: 30px;
+  }
+  /* home review area */
+  .home-review-area .review-content {
+    padding: 50px;
+  }
+  .home-review-area .swiper-pagination-bullets {
+    bottom: var(--swiper-pagination-bottom, 80px);
+  }
+}
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  /* Container Fluid */
+  .container-fluid.side-padding {
+    max-width: 1320px;
+  }
+  .container-fluid.ws-padding {
+    max-width: 1320px;
+  }
+  .container-fluid.lf-padding {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* business banner area h-3 */
+  .business-banner-area {
+    padding: 150px 0 150px;
+  }
+  .business-banner-area .talk-card {
+    top: 50px;
+    right: 50px;
+  }
+  .business-banner-content {
+    padding-bottom: 0;
+  }
+  /* car banner h-4 */
+  .car-banner-area .car-content h1 {
+    font-size: 65px;
+  }
+  .car-banner-area .common {
+    left: 30%;
+    font-size: 95px;
+  }
+  /* Health banner h-5 */
+  .health-banner-area .health-image {
+    width: 50%;
+  }
+  .health-banner-area .health-image .circle-image {
+    left: 86%;
+  }
+  .health-banner-area .health-content h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+  }
+  .health-banner-area .health-shape {
+    bottom: 70px;
+  }
+  /* car about area h-4 */
+  .car-about-area .a-shape-2 {
+    right: 20px;
+  }
+  /* about us area */
+  .about-us-area .section-heading .a-image-2 {
+    right: 0;
+  }
+  /* categories area */
+  .categories-area .categories-image {
+    margin-left: 0;
+    text-align: center;
+  }
+  .categories-area .service-shape-1 {
+    display: none;
+  }
+  /* fun fact */
+  .fun-fact-card .fun-fact-circle {
+    right: -35px;
+  }
+  .fun-fact-row.g-4 {
+    --bs-gutter-x: 100px;
+  }
+  /* partner area */
+  .partner-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* error page */
+  .error-area {
+    padding-top: 100px;
+  }
+  /* car choose us h-4 */
+  .car-choose-us-area .car-c-content h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  /* car features area h-4 */
+  .car-features-area .car-features-warp {
+    margin-left: 0;
+  }
+  .car-features-area .car-features-warp .card-features-card {
+    padding: 25px 20px;
+  }
+  .car-features-area .car-features-warp .card-features-card h4 {
+    font-size: 18px;
+  }
+  /* health choose us area h-4 */
+  .health-choose-us-area .h-image .insurance-card {
+    right: -30px;
+  }
+  /* banner area */
+  .home-banner-area {
+    padding-bottom: 100px;
+  }
+}
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) and (max-width: 1899px) {
+  /* Container Fluid */
+  .container-fluid.side-padding {
+    max-width: 1520px;
+  }
+  .container-fluid.ws-padding {
+    max-width: 1520px;
+  }
+  .container-fluid.lf-padding {
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* partner area */
+  .partner-area .container-fluid {
+    margin-right: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  /* Health banner h-5 */
+  .health-banner-area .health-image {
+    width: 50%;
+  }
+  .health-banner-area .health-image .circle-image {
+    left: 88%;
+  }
+  .health-banner-area .health-shape {
+    bottom: 70px;
+  }
+  /* banner area */
+  .home-banner-area {
+    padding-bottom: 100px;
+  }
+}
+/* Min width 2000px *//*# sourceMappingURL=responsive.css.map */
