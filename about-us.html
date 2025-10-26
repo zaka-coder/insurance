@@ -1,1226 +1,856 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Title -->
-        <title>Flbi - Insurance Company HTML Template</title>
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSS Files -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="assets/css/flaticon_my.css">
-        <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
-        <link rel="stylesheet" href="assets/css/scrollCue.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Title -->
+    <title>Insurance</title>
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/favicon.svg">
-    </head>
-    <body>
-        <!-- Preloader -->
-        <div class="preloader">
-            <div class="loader">
-                <span></span>
-                <span></span>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon_my.css">
+    <link rel="stylesheet" href="assets/css/tabler-icons.min.css">
+    <link rel="stylesheet" href="assets/css/scrollCue.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.svg">
+</head>
+
+<body>
+    <!-- Header Area -->
+    <header class="header-area bg-white border-bottom">
+        <div class="container-fluid side-padding">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-5 col-md-3 col-6">
+                    <ul class="social-icons ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center mt-1 mt-md-0 gap-4">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="flaticon-facebook-app-symbol"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="flaticon-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="flaticon-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="ti ti-brand-google-filled"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-9 col-6">
+                    <ul
+                        class="contact-info ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center justify-content-end gap-4">
+                        <li class="d-flex align-items-center gap-2">
+                            <a href="contact-us.html" class="fw-medium cp">Consult Now</a>
+                            <i class="ti ti-arrow-narrow-right consult"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!-- Preloader End -->
+    </header>
+    <!-- Header Area End -->
 
-        <!-- Header Area -->
-        <header class="header-area bg-white border-bottom">
-            <div class="container-fluid side-padding">
-                <div class="row align-items-center">
-                    <div class="col-xl-4 col-lg-5 col-md-3">
+    <!-- Start Navbar Area -->
+    <nav class="navbar main-navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid side-padding position-relative">
+            <a class="navbar-brand logo-brand p-0" href="#">
+                <img src="assets/images/logo.png" alt="image" width="120" class="object-contain">
+            </a>
+            <a class="navbar-toggler" data-bs-toggle="offcanvas" href="index.html#offcanvasRight" role="button"
+                aria-controls="offcanvasRight">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="others-options left-border">
+                <ul class="d-flex align-items-center shrink-0 ps-0 pe-0 mb-0 list-unstyled">
+                    <li>
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="icon shrink-0">
+                                <a href="tel:0000000000">
+                                    <i class="flaticon-phone-call"></i>
+                                </a>
+                            </div>
+                            <div class="number">
+                                <span class="d-block">Talk to an expert</span>
+                                <a class="fw-medium cp" href="tel:0000000000">(+0) 000 000 000</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar Area -->
+
+    <!-- Start Mobile Menu -->
+    <div class="side-modal mobile-navbar offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-menu">
+                <li class="mobile-menu-list dropdown">
+                    <a class="nav-link icon" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="mobile-menu-list dropdown">
+                    <a class="nav-link icon" href="about-us.html">
+                        About Us
+                    </a>
+                </li>
+            </ul>
+
+            <div class="others-options"></div>
+        </div>
+    </div>
+    <!-- End Mobile Menu -->
+
+
+    <!-- Start Page Banner Area -->
+    <div class="page-banner-area bg-eef2e4 position-relative z-1">
+        <div class="container">
+            <div class="page-banner-content">
+                <h2 class="fw-semibold lh-1 mb-3">About Us</h2>
+                <ul class="pages-list ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+        <img class="h-image-7" src="assets/images/h-image-7.png" alt="image">
+    </div>
+    <!-- End Page Banner Area -->
+
+    <!-- Start About Us Area -->
+    <div class="about-us-area ptb-120 position-relative z-1">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="about-us-image">
+                        <img class="a-image-1 br-5" src="assets/images/about/a-image-1.jpg" alt="image">
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-heading mb-0 position-relative">
+                        <h2>We’re A Trusted & Professional <span class="fw-800 fst-italic">Insurance</span> Company</h2>
+                        <p class="mb-4">At Our Family Insurance, we are providing <span class="d-block"></span>
+                            comprehensiv tailored to meet the diveneeds of our clients. Our offerings insurance.</p>
+
+                        <ul class="about-list ps-0 pe-0 mb-4 list-unstyled">
+                            <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Pina &
+                                Associates Insurance</li>
+                            <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Payment At
+                                Contingency</li>
+                            <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Amount Of
+                                Payment</li>
+                            <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Large Number
+                                Of Insurance</li>
+                        </ul>
+
+                        <h4 class="sign lh-1 mb-2">Person</h4>
+                        <span class="d-block gary">CEO, Company Name</span>
+
+
+                        <img class="a-image-2 rounded-3" src="assets/images/about/a-image-2.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="a-shape-2" src="assets/images/shape/a-shape-2.png" alt="image">
+    </div>
+    <!-- End About Us Area -->
+
+    <!-- Start Categories Area -->
+    <div class="categories-area ptb-120 bg-f2f6f6 position-relative z-1">
+        <div class="container">
+            <div class="section-title" style="max-width: 620px;">
+                <h2>Specialty & Custom <span class="fw-800 fst-italic">Insurance</span> Solutions Your Needs</h2>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-xl-3">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="categories-card bg-white br-5 mb-3">
+                            <img class="flood" src="assets/images/icon/categories-1.svg" alt="image">
+                            <h3 class="fs-20 fw-semibold lh-1 mb-3">Health Insurance</h3>
+                            <p>These titles are concise And insurance services.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="categories-card bg-white br-5 mb-3">
+                            <img class="flood" src="assets/images/icon/categories-2.svg" alt="image">
+                            <h3 class="fs-20 fw-semibold lh-1 mb-3">Assurix Insurance</h3>
+                            <p>These titles are concise And insurance services.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="categories-card bg-white br-5">
+                            <img class="flood" src="assets/images/icon/categories-3.svg" alt="image">
+                            <h3 class="fs-20 fw-semibold lh-1 mb-3">Car Insurance</h3>
+                            <p>These titles are concise And insurance services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="categories-image position-relative">
+                        <img class="a-image-3" src="assets/images/about/a-image-3.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="categories-card bg-white br-5 mb-3">
+                            <img class="flood" src="assets/images/icon/categories-4.svg" alt="image">
+                            <h3 class="fs-20 fw-semibold lh-1 mb-3">Shieldify Insurance</h3>
+                            <p>These titles are concise And insurance services.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="categories-card bg-white br-5 mb-3">
+                            <img class="flood" src="assets/images/icon/categories-5.svg" alt="image">
+                            <h3 class="fs-20 fw-semibold lh-1 mb-3">SureTrust Insurance</h3>
+                            <p>These titles are concise And insurance services.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="categories-card bg-white br-5">
+                            <img class="flood" src="assets/images/icon/categories-6.svg" alt="image">
+                            <h3 class="fs-20 fw-semibold lh-1 mb-3">Travel Insurance</h3>
+                            <p>These titles are concise And insurance services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="service-shape-1" src="assets/images/shape/service-shape-1.png" alt="image">
+    </div>
+    <!-- End Categories Area -->
+
+    <!-- Start Features Area -->
+    <div class="features-area ptb-120">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fw-semibold">Covering All The Insurance Features Fields</h2>
+            </div>
+            <div class="row g-0" data-cues="slideInUp" data-duration="800">
+                <div class="col-lg-3 col-md-6">
+                    <div class="features-card position-relative z-1">
+                        <i class="flaticon-company-1 company"></i>
+                        <h3 class="fs-22 mb-3">Professional <span class="d-block"></span> Insurance Services</h3>
+                        <p>Our Family Insurance is Every time I’ve had questions or tupdate my policy incredibly
+                            helpful.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="features-card position-relative z-1">
+                        <i class="flaticon-disaster company"></i>
+                        <h3 class="fs-22 mb-3">We’re Trusted <span class="d-block"></span> & Save your Money</h3>
+                        <p>Our Family Insurance is Every time I’ve had questions or tupdate my policy incredibly
+                            helpful.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="features-card position-relative z-1">
+                        <i class="flaticon-coffin company"></i>
+                        <h3 class="fs-22 mb-3">Corporate And <span class="d-block"></span> Financial Services</h3>
+                        <p>Our Family Insurance is Every time I’ve had questions or tupdate my policy incredibly
+                            helpful.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="features-card position-relative z-1 fourPart">
+                        <i class="flaticon-cargo company"></i>
+                        <h3 class="fs-22 mb-3">So Much Fast & <span class="d-block"></span> Elidable Services</h3>
+                        <p>Our Family Insurance is Every time I’ve had questions or tupdate my policy incredibly
+                            helpful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Features Area -->
+
+    <!-- Start Why Choose Us Area -->
+    <div class="why-choose-us-area bg-eef2e4 ptb-120">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-xl-5 col-lg-5 col-md-12">
+                    <div class="section-heading mb-0">
+                        <h2 class="fw-semibold">Providing The Best <span class="fst-italic">Insurance</span> Policy To
+                            Customers</h2>
+                        <p class="mb-4">With Our Family Insurance, you can trust important assets and loved protected,
+                            giving you peace.With Our Family Insurance, you can trust important assets and loved
+                            protected, giving you peace.With Our Family Insurance.</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="choose-list fw-medium d-flex align-items-center gap-2">
+                                    <i class="flaticon-check lh-1 mt-1"></i>
+                                    Savings Potential
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="choose-list fw-medium d-flex align-items-center gap-2">
+                                    <i class="flaticon-check lh-1 mt-1"></i>
+                                    Excellent Protection
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="choose-list fw-medium d-flex align-items-center gap-2">
+                                    <i class="flaticon-check lh-1 mt-1"></i>
+                                    Qualified Agents
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="choose-list fw-medium d-flex align-items-center gap-2">
+                                    <i class="flaticon-check lh-1 mt-1"></i>
+                                    Experts Team Member
+                                </div>
+                            </div>
+                        </div>
+                        <a href="about-us.html" class="default-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12">
+                    <form class="choose-us-form bg-white br-5 ms-auto" style="max-width: 800px;">
+                        <div class="section-title">
+                            <h2 class="fw-semibold mb-2">We Will Help You Find The Right Policy</h2>
+                            <span>Fill the quote and compare policies.</span>
+                        </div>
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="one-tab" data-bs-toggle="tab"
+                                    data-bs-target="#one-tab-pane" type="button" role="tab" aria-controls="one-tab-pane"
+                                    aria-selected="true">Education</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="two-tab" data-bs-toggle="tab"
+                                    data-bs-target="#two-tab-pane" type="button" role="tab" aria-controls="two-tab-pane"
+                                    aria-selected="false">Travel</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="three-tab" data-bs-toggle="tab"
+                                    data-bs-target="#three-tab-pane" type="button" role="tab"
+                                    aria-controls="three-tab-pane" aria-selected="false">Health</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="four-tab" data-bs-toggle="tab"
+                                    data-bs-target="#four-tab-pane" type="button" role="tab"
+                                    aria-controls="four-tab-pane" aria-selected="false">Car</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="five-tab" data-bs-toggle="tab"
+                                    data-bs-target="#five-tab-pane" type="button" role="tab"
+                                    aria-controls="five-tab-pane" aria-selected="false">Business</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="one-tab-pane" role="tabpanel"
+                                aria-labelledby="one-tab" tabindex="0">
+                                <div class="health-form">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Insurance Type">
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="balance-range-1">Limited Of Balance</label>
+                                        <input type="range" id="balance-range-1" min="0" max="5000" value="2390"
+                                            step="10">
+                                        <div class="slider-value">
+                                            <span>Selected Value</span>
+                                            <strong id="balance-value-1">$2390</strong>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="default-btn">Send Request</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab"
+                                tabindex="0">
+                                <div class="health-form">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Insurance Type">
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="balance-range-2">Limited Of Balance</label>
+                                        <input type="range" id="balance-range-2" min="0" max="5000" value="2390"
+                                            step="10">
+                                        <div class="slider-value">
+                                            <span>Selected Value</span>
+                                            <strong id="balance-value-2">$2390</strong>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="default-btn">Send Request</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab"
+                                tabindex="0">
+                                <div class="health-form">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Insurance Type">
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="balance-range-3">Limited Of Balance</label>
+                                        <input type="range" id="balance-range-3" min="0" max="5000" value="2390"
+                                            step="10">
+                                        <div class="slider-value">
+                                            <span>Selected Value</span>
+                                            <strong id="balance-value-3">$2390</strong>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="default-btn">Send Request</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab"
+                                tabindex="0">
+                                <div class="health-form">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Insurance Type">
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="balance-range-4">Limited Of Balance</label>
+                                        <input type="range" id="balance-range-4" min="0" max="5000" value="2390"
+                                            step="10">
+                                        <div class="slider-value">
+                                            <span>Selected Value</span>
+                                            <strong id="balance-value-4">$2390</strong>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="default-btn">Send Request</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="five-tab-pane" role="tabpanel" aria-labelledby="five-tab"
+                                tabindex="0">
+                                <div class="health-form">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="text" class="form-control" placeholder="Insurance Type">
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-container">
+                                        <label for="balance-range-5">Limited Of Balance</label>
+                                        <input type="range" id="balance-range-5" min="0" max="5000" value="2390"
+                                            step="10">
+                                        <div class="slider-value">
+                                            <span>Selected Value</span>
+                                            <strong id="balance-value-5">$2390</strong>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="default-btn">Send Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose Us Area -->
+
+    <!-- Start Review Area -->
+    <div class="review-area ptb-120">
+        <div class="container">
+            <div class="review-items position-relative">
+                <div class="swiper reviewSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card text-center ms-auto me-auto" style="max-width: 865px;">
+                                <div class="quote">
+                                    <img src="assets/images/icon/quote-2.svg" alt="image">
+                                </div>
+                                <p class="fs-20 fst-italic fw-semibold cp mb-4">"The customer service at Our Family
+                                    Insurance is outstanding. Every time I’uestions or needed to update my policy,
+                                    they’ve been incredibly helpful It’s clear they truly care about their clients.
+                                    Switching to Our was one of the best decisions I made for my family’s insurance
+                                    needs."</p>
+
+                                <div class="review-title d-flex align-items-center justify-content-center">
+                                    <img class="u-image-1 rounded-circle object-fit-cover"
+                                        src="assets/images/user/u-image-2.jpg" alt="image">
+                                    <div class="u-image text-start position-relative">
+                                        <h4 class="fs-22 fw-semibold lh-1 mb-2">Williams Brown</h4>
+                                        <span>business Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card text-center ms-auto me-auto" style="max-width: 865px;">
+                                <div class="quote">
+                                    <img src="assets/images/icon/quote-2.svg" alt="image">
+                                </div>
+                                <p class="fs-20 fst-italic fw-semibold cp mb-4">"The customer service at Our Family
+                                    Insurance is outstanding. Every time I’uestions or needed to update my policy,
+                                    they’ve been incredibly helpful It’s clear they truly care about their clients.
+                                    Switching to Our was one of the best decisions I made for my family’s insurance
+                                    needs."</p>
+
+                                <div class="review-title d-flex align-items-center justify-content-center">
+                                    <img class="u-image-1 rounded-circle object-fit-cover"
+                                        src="assets/images/user/u-image-3.jpg" alt="image">
+                                    <div class="u-image text-start position-relative">
+                                        <h4 class="fs-22 fw-semibold lh-1 mb-2">Isabella Emily</h4>
+                                        <span>Manager Group</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card text-center ms-auto me-auto" style="max-width: 865px;">
+                                <div class="quote">
+                                    <img src="assets/images/icon/quote-2.svg" alt="image">
+                                </div>
+                                <p class="fs-20 fst-italic fw-semibold cp mb-4">"The customer service at Our Family
+                                    Insurance is outstanding. Every time I’uestions or needed to update my policy,
+                                    they’ve been incredibly helpful It’s clear they truly care about their clients.
+                                    Switching to Our was one of the best decisions I made for my family’s insurance
+                                    needs."</p>
+
+                                <div class="review-title d-flex align-items-center justify-content-center">
+                                    <img class="u-image-1 rounded-circle object-fit-cover"
+                                        src="assets/images/user/u-image-4.jpg" alt="image">
+                                    <div class="u-image text-start position-relative">
+                                        <h4 class="fs-22 fw-semibold lh-1 mb-2">Thomas Rodriguez</h4>
+                                        <span>Product Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ti ti-arrow-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ti ti-arrow-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Review Area -->
+
+    <!-- Start Team Area -->
+    <div class="team-area ptb-120  position-relative z-1">
+        <div class="container">
+            <div class="section-title" style="max-width: 450px;">
+                <h2>Meet Our Experienced Team Member</h2>
+            </div>
+            <div class="row g-4 align-items-center" data-cues="slideInUp" data-duration="800">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="team-card">
+                        <div class="team-image position-relative">
+                            <img class="rounded-2" src="assets/images/team/t-image-1.jpg" alt="image">
+                            <a href="javascript:void(0)"
+                                class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">Person
+                                #1 <i class="ti ti-arrow-narrow-right"></i></a>
+                        </div>
+                        <div class="team-card-body text-center">
+                            <h3 class="fs-22 fw-medium lh-1 mb-2">
+                                <a href="javascript:void(0)">Person #1</a>
+                            </h3>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="team-card">
+                        <div class="team-image position-relative">
+                            <img class="rounded-2" src="assets/images/team/t-image-2.jpg" alt="image">
+                            <a href="javascript:void(0)"
+                                class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">Person
+                                #2 <i class="ti ti-arrow-narrow-right"></i></a>
+                        </div>
+                        <div class="team-card-body text-center">
+                            <h3 class="fs-22 fw-medium lh-1 mb-2">
+                                <a href="javascript:void(0)">person #2</a>
+                            </h3>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="team-card">
+                        <div class="team-image position-relative">
+                            <img class="rounded-2" src="assets/images/team/t-image-3.jpg" alt="image">
+                            <a href="javascript:void(0)"
+                                class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">Person
+                                #3 <i class="ti ti-arrow-narrow-right"></i></a>
+                        </div>
+                        <div class="team-card-body text-center">
+                            <h3 class="fs-22 fw-medium lh-1 mb-2">
+                                <a href="javascript:void(0)">person #3</a>
+                            </h3>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="team-card">
+                        <div class="team-image position-relative">
+                            <img class="rounded-2" src="assets/images/team/t-image-4.jpg" alt="image">
+                            <a href="javascript:void(0)"
+                                class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">Person
+                                #4 <i class="ti ti-arrow-narrow-right"></i></a>
+                        </div>
+                        <div class="team-card-body text-center">
+                            <h3 class="fs-22 fw-medium lh-1 mb-2">
+                                <a href="javascript:void(0)">Person #4</a>
+                            </h3>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team Area -->
+
+    <!-- Start Fun Fact Area -->
+    <div class="fun-fact-area life-fun-fact pt-20 pb-120">
+        <div class="container">
+            <div class="row align-items-center g-4 fun-fact-row" data-cues="slideInUp" data-duration="800">
+                <div class="col-lg-3 col-md-6">
+                    <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center">
+                            <h3 class="fs-70 fw-900 lh-1 mb-2 counter">19</h3>
+                            <h3 class="fs-70 fw-900 lh-1 mb-2">K</h3>
+                        </div>
+                        <p class="fw-medium cp">Give Insurance</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center">
+                            <h3 class="fs-70 fw-900 lh-1 mb-2 counter">39</h3>
+                            <h3 class="fs-70 fw-900 lh-1 mb-2">K</h3>
+                        </div>
+                        <p class="fw-medium cp">Success Rating</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center">
+                            <h3 class="fs-70 fw-900 lh-1 mb-2 counter">13</h3>
+                            <h3 class="fs-70 fw-900 lh-1 mb-2">K</h3>
+                        </div>
+                        <p class="fw-medium cp">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center">
+                            <h3 class="fs-70 fw-900 lh-1 mb-2 counter">49</h3>
+                            <h3 class="fs-70 fw-900 lh-1 mb-2">+</h3>
+                        </div>
+                        <p class="fw-medium cp">Expert Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Fun Fact Area -->
+
+    <!-- Start Footer Area -->
+    <div class="footer-area pt-120 bg-0050 position-relative z-1">
+        <div class="container">
+            <div class="row " data-cues="slideInUp" data-duration="800">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-weight f-card">
+                        <a href="#" class="f-logo d-block mb-4 fs-40 fw-bold">
+                            <img src="assets/images/logo.png" alt="" class="object-contain" width="120"
+                                style="filter: invert(1);">
+                        </a>
+                        <ul class="address-list ps-0 pe-0 mb-0 list-unstyled">
+                            <li><span class="fw-semibold lh-1 text-white d-block mb-4">Contact Us</span></li>
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="ti ti-map-pin"></i>
+                                <a href="javascript:void(0)">My Address<span class="d-block"></span>My Address</a>
+                            </li>
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="ti ti-phone"></i>
+                                <div>
+                                    <a href="tel:0000000000" class="d-block">(+00) 000 000 000</a>
+                                    <a href="tel:0000000000">(+00) 000 000 000</a>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-4 align-items-center">
+                                <i class="ti ti-mail"></i>
+                                <div>
+                                    <a href="mailto:example@gmail.com" class="d-block">example@gmail.com</a>
+                                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-weight ps-0 ps-md-4">
+                        <h3 class="fs-22 fw-semibold lh-1 text-white">Quick Link</h3>
+                        <ul class="info-list ps-0 pe-0 mb-0 list-unstyled">
+                            <li class="d-flex align-items-center gap-2">
+                                <a href="index.html">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-weight ps-0 ps-md-4">
+                        <h3 class="fs-22 fw-semibold lh-1 text-white">Our Services</h3>
+                        <ul class="info-list ps-0 pe-0 mb-0 list-unstyled">
+                            <li class="d-flex align-items-center gap-2">
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-weight">
+                        <h3 class="fs-22 fw-semibold lh-1 text-white">Get Updates</h3>
+
+                        <form class="footer-form mb-4">
+                            <div class="f-group position-relative">
+                                <input type="email" class="form-control" placeholder="Email">
+                                <button type="submit" class="read-more">
+                                    <i class="ti ti-mail"></i>
+                                </button>
+                            </div>
+                        </form>
+
                         <ul class="social-icons ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center gap-4">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <i class="flaticon-facebook-app-symbol"></i>
+                                <a href="#" target="_blank">
+                                    <i class="ti ti-brand-facebook-filled"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.twitter.com/" target="_blank">
-                                    <i class="flaticon-twitter"></i>
+                                <a href="#" target="_blank">
+                                    <i class="ti ti-brand-x"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
-                                    <i class="flaticon-linkedin"></i>
+                                <a href="#" target="_blank">
+                                    <i class="ti ti-brand-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.google.com/" target="_blank">
+                                <a href="#" target="_blank">
                                     <i class="ti ti-brand-google-filled"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-8 col-lg-7 col-md-9">
-                        <ul class="contact-info ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center justify-content-end gap-4">
-                            <li class="d-flex align-items-center gap-2">
-                                <i class="ti ti-clock-hour-8"></i>
-                                <span class="fw-medium cp">working hours</span> : Mon-sat (8.00am - 6.00PM)
-                            </li>
-                            <li class="d-flex align-items-center gap-2">
-                                <a href="contact-us.html" class="fw-medium cp">Consult Now</a>
-                                <i class="ti ti-arrow-narrow-right consult"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Header Area End -->
-
-        <!-- Start Navbar Area -->
-        <nav class="navbar main-navbar navbar-expand-lg" id="navbar">
-            <div class="container-fluid side-padding position-relative">
-                <a class="navbar-brand logo-brand p-0" href="index.html">
-                    <img src="assets/images/logo.svg" alt="image">
-                </a>
-                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="about-us.html#offcanvasRight" role="button"
-                    aria-controls="offcanvasRight">
-                    <span class="burger-menu">
-                        <span class="top-bar"></span>
-                        <span class="middle-bar"></span>
-                        <span class="bottom-bar"></span>
-                    </span>
-                </a>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="about-us.html#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Home
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="index.html">
-                                        Family Insurance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="index-2.html">
-                                        Life Insurance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="index-3.html">
-                                        Business Insurance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="index-4.html">
-                                        Car Insurance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="index-5.html">
-                                        Health Insurance
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="index-6.html">
-                                        Home Insurance
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="about-us.html#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Pages
-                            </a>
-                            
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item active" href="about-us.html">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="testimonials.html">
-                                        Our Testimonials
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="appointment.html">
-                                        Appointment
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="pricing.html">
-                                        Pricing Plan
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="faq.html">
-                                        FAQ's
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="login.html">
-                                        Login
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="register.html">
-                                        Register
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="privacy-policy.html">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="terms-conditions.html">
-                                        Terms & Conditions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="error-404.html">
-                                        Error 404
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="about-us.html#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Services
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="services.html">
-                                        Services
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="service-details.html">
-                                        Service Details
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="about-us.html#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Projects
-                            </a>
-                            
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="projects.html">
-                                        Projects
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="project-details.html">
-                                        Project Details
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="about-us.html#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Team
-                            </a>
-                            
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="team.html">
-                                        Our Team
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="team-details.html">
-                                        Team Details
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="about-us.html#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Blog
-                            </a>
-                            
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="blog.html">
-                                        Our Blog
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="blog-details.html">
-                                        Blog Details
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="contact-us.html">
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="others-options left-border">
-                    <ul class="d-flex align-items-center shrink-0 ps-0 pe-0 mb-0 list-unstyled">
-                        <li>
-                            <button type="button" class="search-btn fw-medium p-0 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <i class="ti ti-search search"></i>
-                            </button>
-                        </li>
-
-                        <li>
-                            <div class="d-flex align-items-center gap-2">
-                                <div class="icon shrink-0">
-                                    <a href="tel:44123456789">
-                                        <i class="flaticon-phone-call"></i>
-                                    </a>
-                                </div>
-                                <div class="number">
-                                    <span class="d-block">Talk to an expert</span>
-                                    <a class="fw-medium cp" href="tel:44123456789">(+44) 123 456 789</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- End Navbar Area -->
-
-        <!-- Start Mobile Menu -->
-        <div class="side-modal mobile-navbar offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="mobile-menu">
-                    <li class="mobile-menu-list">
-                        <a href="javascript:void(0);">
-                            Home
-                        </a>
-
-                        <ul class="mobile-menu-items">
-                            <li>
-                                <a class="dropdown-item" href="index.html">
-                                    Family Insurance
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index-2.html">
-                                    Life Insurance
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index-3.html">
-                                    Business Insurance
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index-4.html">
-                                    Car Insurance
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index-5.html">
-                                    Health Insurance
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index-6.html">
-                                    Home Insurance
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mobile-menu-list active">
-                        <a href="javascript:void(0);">
-                            Pages
-                        </a>
-
-                        <ul class="mobile-menu-items">
-                            <li>
-                                <a class="dropdown-item active" href="about-us.html">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="testimonials.html">
-                                    Our Testimonials
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="appointment.html">
-                                    Appointment
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="pricing.html">
-                                    Pricing Plan
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="faq.html">
-                                    FAQ’s
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="login.html">
-                                    Login
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="register.html">
-                                    Register
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="reset-password.html">
-                                    Reset Password
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="privacy-policy.html">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="terms-conditions.html">
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="error-404.html">
-                                    Error 404
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mobile-menu-list">
-                        <a href="javascript:void(0);">
-                            Services
-                        </a>
-
-                        <ul class="mobile-menu-items">
-                            <li>
-                                <a class="dropdown-item" href="services.html">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="service-details.html">
-                                    Service Details
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mobile-menu-list">
-                        <a href="javascript:void(0);">
-                            Projects
-                        </a>
-
-                        <ul class="mobile-menu-items">
-                            <li>
-                                <a class="dropdown-item" href="projects.html">
-                                    Projects
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="project-details.html">
-                                    Project Details
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mobile-menu-list">
-                        <a href="javascript:void(0);">
-                            Team
-                        </a>
-
-                        <ul class="mobile-menu-items">
-                            <li>
-                                <a class="dropdown-item" href="team.html">
-                                    Our Team
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="team-details.html">
-                                    Team Details
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mobile-menu-list">
-                        <a href="javascript:void(0);">
-                            Blog
-                        </a>
-
-                        <ul class="mobile-menu-items">
-                            <li>
-                                <a class="dropdown-item" href="blog.html">
-                                    Our Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="blog-details.html">
-                                    Blog Details
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="mobile-menu-list dropdown">
-                        <a class="nav-link icon" href="contact-us.html">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="others-options"></div>
-            </div>
-        </div>
-        <!-- End Mobile Menu -->
-
-        <!-- Search Modal -->
-        <div class="search-modal modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-dialog modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form class="popup-form">
-                            <input type="text" class="form-control" placeholder="Search here...">
-                            <button type="submit" class="p-btn">
-                                <i class="flaticon-search-interface-symbol"></i>
-                            </button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Search Modal End -->
+        <img src="assets/images/shape/footer-shape-1.png" alt="image" class="footer-shape">
+    </div>
+    <!-- End Footer Area -->
 
-        <!-- Start Page Banner Area -->
-        <div class="page-banner-area bg-eef2e4 position-relative z-1">
-            <div class="container">
-                <div class="page-banner-content">
-                    <h2 class="fw-semibold lh-1 mb-3">About Us</h2>
-                    <ul class="pages-list ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center">
-                        <li><a href="index.html">Home</a></li>
-                        <li>About Us</li>
-                    </ul>
-                </div>
-            </div>
-            <img class="h-image-7" src="assets/images/hero/h-image-7.png" alt="image">
-        </div>
-        <!-- End Page Banner Area -->
 
-        <!-- Start About Us Area -->
-        <div class="about-us-area ptb-120 position-relative z-1">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="about-us-image">
-                            <img class="a-image-1 br-5" src="assets/images/about/a-image-1.jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="section-heading mb-0 position-relative">
-                            <h2>We’re A Trusted & Professional <span class="fw-800 fst-italic">Insurance</span> Company</h2>
-                            <p class="mb-4">At Flbi Family Insurance, we are providing <span class="d-block"></span> comprehensiv tailored to meet the diveneeds of our clients. Our offerings insurance.</p>
+    <!-- Go top Btn -->
+    <div class="go-top">
+        <i class="ti ti-arrow-big-up-lines-filled"></i>
+    </div>
+    <!-- Go top Btn End -->
 
-                            <ul class="about-list ps-0 pe-0 mb-4 list-unstyled">
-                                <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Pina & Associates Insurance</li>
-                                <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Payment At Contingency</li>
-                                <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Amount Of Payment</li>
-                                <li class="d-flex align-items-center gap-2"><i class="ti ti-circle-filled"></i> Large Number Of Insurance</li>
-                            </ul>
+    <!-- JS Files -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/fslightbox.min.js"></script>
+    <script src="assets/js/scrollCue.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
 
-                            <h4 class="sign lh-1 mb-2">Cameron Ferguson</h4>
-                            <span class="d-block gary">CEO, Flbi</span>
-
-                            
-                            <img class="a-image-2 rounded-3" src="assets/images/about/a-image-2.jpg" alt="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img class="a-shape-2" src="assets/images/shape/a-shape-2.png" alt="image">
-        </div>
-        <!-- End About Us Area -->
-
-        <!-- Start Categories Area -->
-        <div class="categories-area ptb-120 bg-f2f6f6 position-relative z-1">
-            <div class="container">
-                <div class="section-title" style="max-width: 620px;">
-                    <h2>Specialty & Custom <span class="fw-800 fst-italic">Insurance</span> Solutions Your Needs</h2>
-                </div>
-                <div class="row g-4 align-items-center">
-                    <div class="col-xl-3">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="categories-card bg-white br-5 mb-3">
-                                <img class="flood" src="assets/images/icon/categories-1.svg" alt="image">
-                                <h3 class="fs-20 fw-semibold lh-1 mb-3">Health Insurance</h3>
-                                <p>These titles are concise And insurance services.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="categories-card bg-white br-5 mb-3">
-                                <img class="flood" src="assets/images/icon/categories-2.svg" alt="image">
-                                <h3 class="fs-20 fw-semibold lh-1 mb-3">Assurix Insurance</h3>
-                                <p>These titles are concise And insurance services.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="categories-card bg-white br-5">
-                                <img class="flood" src="assets/images/icon/categories-3.svg" alt="image">
-                                <h3 class="fs-20 fw-semibold lh-1 mb-3">Car Insurance</h3>
-                                <p>These titles are concise And insurance services.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="categories-image position-relative">
-                            <img class="a-image-3" src="assets/images/about/a-image-3.png" alt="image">
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="categories-card bg-white br-5 mb-3">
-                                <img class="flood" src="assets/images/icon/categories-4.svg" alt="image">
-                                <h3 class="fs-20 fw-semibold lh-1 mb-3">Shieldify Insurance</h3>
-                                <p>These titles are concise And insurance services.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="categories-card bg-white br-5 mb-3">
-                                <img class="flood" src="assets/images/icon/categories-5.svg" alt="image">
-                                <h3 class="fs-20 fw-semibold lh-1 mb-3">SureTrust Insurance</h3>
-                                <p>These titles are concise And insurance services.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="categories-card bg-white br-5">
-                                <img class="flood" src="assets/images/icon/categories-6.svg" alt="image">
-                                <h3 class="fs-20 fw-semibold lh-1 mb-3">Travel Insurance</h3>
-                                <p>These titles are concise And insurance services.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img class="service-shape-1" src="assets/images/shape/service-shape-1.png" alt="image">
-        </div>
-        <!-- End Categories Area -->
-
-        <!-- Start Features Area -->
-        <div class="features-area ptb-120">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="fw-semibold">Covering All The Insurance Features Fields</h2>
-                </div>
-                <div class="row g-0" data-cues="slideInUp" data-duration="800">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="features-card position-relative z-1">
-                            <i class="flaticon-company-1 company"></i>
-                            <h3 class="fs-22 mb-3">Professional <span class="d-block"></span> Insurance Services</h3>
-                            <p>Flib Family Insurance is Every time I’ve had questions or tupdate my policy incredibly helpful.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="features-card position-relative z-1">
-                            <i class="flaticon-disaster company"></i>
-                            <h3 class="fs-22 mb-3">We’re Trusted <span class="d-block"></span> & Save your Money</h3>
-                            <p>Flib Family Insurance is Every time I’ve had questions or tupdate my policy incredibly helpful.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="features-card position-relative z-1">
-                            <i class="flaticon-coffin company"></i>
-                            <h3 class="fs-22 mb-3">Corporate And <span class="d-block"></span> Financial Services</h3>
-                            <p>Flib Family Insurance is Every time I’ve had questions or tupdate my policy incredibly helpful.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="features-card position-relative z-1 fourPart">
-                            <i class="flaticon-cargo company"></i>
-                            <h3 class="fs-22 mb-3">So Much Fast & <span class="d-block"></span> Elidable Services</h3>
-                            <p>Flib Family Insurance is Every time I’ve had questions or tupdate my policy incredibly helpful.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Features Area -->
-
-        <!-- Start Why Choose Us Area -->
-        <div class="why-choose-us-area bg-eef2e4 ptb-120">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-xl-5 col-lg-5 col-md-12">
-                        <div class="section-heading mb-0">
-                            <h2 class="fw-semibold">Providing The Best <span class="fst-italic">Insurance</span> Policy To Customers</h2>
-                            <p class="mb-4">With Flib Family Insurance, you can trust important assets and loved protected, giving you peace.With Flib Family Insurance, you can trust important assets and loved protected, giving you peace.With Flib Family Insurance.</p>
-
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="choose-list fw-medium d-flex align-items-center gap-2">
-                                        <i class="flaticon-check lh-1 mt-1"></i>
-                                        Savings Potential
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="choose-list fw-medium d-flex align-items-center gap-2">
-                                        <i class="flaticon-check lh-1 mt-1"></i>
-                                        Excellent Protection
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="choose-list fw-medium d-flex align-items-center gap-2">
-                                        <i class="flaticon-check lh-1 mt-1"></i>
-                                        Qualified Agents
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="choose-list fw-medium d-flex align-items-center gap-2">
-                                        <i class="flaticon-check lh-1 mt-1"></i>
-                                        Experts Team Member
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="about-us.html" class="default-btn">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7 col-md-12">
-                        <form class="choose-us-form bg-white br-5 ms-auto" style="max-width: 800px;">
-                            <div class="section-title">
-                                <h2 class="fw-semibold mb-2">We Will Help You Find The Right Policy</h2>
-                                <span>Fill the quote and compare policies.</span>
-                            </div>
-                            
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one-tab-pane" type="button" role="tab" aria-controls="one-tab-pane" aria-selected="true">Education</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two-tab-pane" type="button" role="tab" aria-controls="two-tab-pane" aria-selected="false">Travel</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="three-tab" data-bs-toggle="tab" data-bs-target="#three-tab-pane" type="button" role="tab" aria-controls="three-tab-pane" aria-selected="false">Health</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four-tab-pane" type="button" role="tab" aria-controls="four-tab-pane" aria-selected="false">Car</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="five-tab" data-bs-toggle="tab" data-bs-target="#five-tab-pane" type="button" role="tab" aria-controls="five-tab-pane" aria-selected="false">Business</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="one-tab-pane" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
-                                    <div class="health-form">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="First Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Last Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Email*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Insurance Type">
-                                            </div>
-                                        </div>
-                        
-                                        <div class="slider-container">
-                                            <label for="balance-range-1">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-1" min="0" max="5000" value="2390" step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-1">$2390</strong>
-                                            </div>
-                                        </div>
-                        
-                                        <button type="submit" class="default-btn">Send Request</button>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
-                                    <div class="health-form">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="First Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Last Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Email*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Insurance Type">
-                                            </div>
-                                        </div>
-                        
-                                        <div class="slider-container">
-                                            <label for="balance-range-2">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-2" min="0" max="5000" value="2390" step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-2">$2390</strong>
-                                            </div>
-                                        </div>
-                        
-                                        <button type="submit" class="default-btn">Send Request</button>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="three-tab-pane" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
-                                    <div class="health-form">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="First Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Last Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Email*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Insurance Type">
-                                            </div>
-                                        </div>
-                        
-                                        <div class="slider-container">
-                                            <label for="balance-range-3">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-3" min="0" max="5000" value="2390" step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-3">$2390</strong>
-                                            </div>
-                                        </div>
-                        
-                                        <button type="submit" class="default-btn">Send Request</button>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="four-tab-pane" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
-                                    <div class="health-form">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="First Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Last Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Email*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Insurance Type">
-                                            </div>
-                                        </div>
-                        
-                                        <div class="slider-container">
-                                            <label for="balance-range-4">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-4" min="0" max="5000" value="2390" step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-4">$2390</strong>
-                                            </div>
-                                        </div>
-                        
-                                        <button type="submit" class="default-btn">Send Request</button>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="five-tab-pane" role="tabpanel" aria-labelledby="five-tab" tabindex="0">
-                                    <div class="health-form">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="First Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Last Name*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Email*">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6">
-                                                <input type="text" class="form-control" placeholder="Insurance Type">
-                                            </div>
-                                        </div>
-                        
-                                        <div class="slider-container">
-                                            <label for="balance-range-5">Limited Of Balance</label>
-                                            <input type="range" id="balance-range-5" min="0" max="5000" value="2390" step="10">
-                                            <div class="slider-value">
-                                                <span>Selected Value</span>
-                                                <strong id="balance-value-5">$2390</strong>
-                                            </div>
-                                        </div>
-                        
-                                        <button type="submit" class="default-btn">Send Request</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Why Choose Us Area -->
-
-        <!-- Start Review Area -->
-        <div class="review-area ptb-120">
-            <div class="container">
-                <div class="review-items position-relative">
-                    <div class="swiper reviewSlider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="review-card text-center ms-auto me-auto" style="max-width: 865px;">
-                                    <div class="quote">
-                                        <img src="assets/images/icon/quote-2.svg" alt="image">
-                                    </div>
-                                    <p class="fs-20 fst-italic fw-semibold cp mb-4">"The customer service at Flib Family Insurance is outstanding. Every time I’uestions or needed to update my policy, they’ve been incredibly helpful  It’s clear they truly care about their clients. Switching to Flib was one of the best decisions I made for my family’s insurance needs."</p>
-
-                                    <div class="review-title d-flex align-items-center justify-content-center">
-                                        <img class="u-image-1 rounded-circle object-fit-cover" src="assets/images/user/u-image-2.jpg" alt="image">
-                                        <div class="u-image text-start position-relative">
-                                            <h4 class="fs-22 fw-semibold lh-1 mb-2">Williams Brown</h4>
-                                            <span>business Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card text-center ms-auto me-auto" style="max-width: 865px;">
-                                    <div class="quote">
-                                        <img src="assets/images/icon/quote-2.svg" alt="image">
-                                    </div>
-                                    <p class="fs-20 fst-italic fw-semibold cp mb-4">"The customer service at Flib Family Insurance is outstanding. Every time I’uestions or needed to update my policy, they’ve been incredibly helpful  It’s clear they truly care about their clients. Switching to Flib was one of the best decisions I made for my family’s insurance needs."</p>
-
-                                    <div class="review-title d-flex align-items-center justify-content-center">
-                                        <img class="u-image-1 rounded-circle object-fit-cover" src="assets/images/user/u-image-3.jpg" alt="image">
-                                        <div class="u-image text-start position-relative">
-                                            <h4 class="fs-22 fw-semibold lh-1 mb-2">Isabella Emily</h4>
-                                            <span>Manager Group</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card text-center ms-auto me-auto" style="max-width: 865px;">
-                                    <div class="quote">
-                                        <img src="assets/images/icon/quote-2.svg" alt="image">
-                                    </div>
-                                    <p class="fs-20 fst-italic fw-semibold cp mb-4">"The customer service at Flib Family Insurance is outstanding. Every time I’uestions or needed to update my policy, they’ve been incredibly helpful  It’s clear they truly care about their clients. Switching to Flib was one of the best decisions I made for my family’s insurance needs."</p>
-
-                                    <div class="review-title d-flex align-items-center justify-content-center">
-                                        <img class="u-image-1 rounded-circle object-fit-cover" src="assets/images/user/u-image-4.jpg" alt="image">
-                                        <div class="u-image text-start position-relative">
-                                            <h4 class="fs-22 fw-semibold lh-1 mb-2">Thomas Rodriguez</h4>
-                                            <span>Product Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next">
-                            <i class="ti ti-arrow-right"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ti ti-arrow-left"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Review Area -->
-
-        <!-- Start Team Area -->
-        <div class="team-area ptb-120 bg-fbfcf5 position-relative z-1">
-            <div class="container">
-                <div class="section-title" style="max-width: 450px;">
-                    <h2>Meet Our Experienced <span class="fw-800">Team</span> Member</h2>
-                </div>
-                <div class="row g-4 align-items-center" data-cues="slideInUp" data-duration="800">
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="team-card">
-                            <div class="team-image position-relative">
-                                <img class="rounded-2" src="assets/images/team/t-image-1.jpg" alt="image">
-                                <a href="team-details.html" class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">View Profile <i class="ti ti-arrow-narrow-right"></i></a>
-                            </div>
-                            <div class="team-card-body text-center">
-                                <h3 class="fs-22 fw-medium lh-1 mb-2">
-                                    <a href="team-details.html">Theresa Morrison</a>
-                                </h3>
-                                <span>Senior Advisor</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="team-card">
-                            <div class="team-image position-relative">
-                                <img class="rounded-2" src="assets/images/team/t-image-2.jpg" alt="image">
-                                <a href="team-details.html" class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">View Profile <i class="ti ti-arrow-narrow-right"></i></a>
-                            </div>
-                            <div class="team-card-body text-center">
-                                <h3 class="fs-22 fw-medium lh-1 mb-2">
-                                    <a href="team-details.html">Harry Underwood</a>
-                                </h3>
-                                <span>Health Coach</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="team-card">
-                            <div class="team-image position-relative">
-                                <img class="rounded-2" src="assets/images/team/t-image-3.jpg" alt="image">
-                                <a href="team-details.html" class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">View Profile <i class="ti ti-arrow-narrow-right"></i></a>
-                            </div>
-                            <div class="team-card-body text-center">
-                                <h3 class="fs-22 fw-medium lh-1 mb-2">
-                                    <a href="team-details.html">Alison Robertson</a>
-                                </h3>
-                                <span>Underwriter</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-                        <div class="team-card">
-                            <div class="team-image position-relative">
-                                <img class="rounded-2" src="assets/images/team/t-image-4.jpg" alt="image">
-                                <a href="team-details.html" class="default-btn rounded-pill text-center p-2 d-inline-flex align-items-center justify-content-center gap-2">View Profile <i class="ti ti-arrow-narrow-right"></i></a>
-                            </div>
-                            <div class="team-card-body text-center">
-                                <h3 class="fs-22 fw-medium lh-1 mb-2">
-                                    <a href="team-details.html">Brandon	Powell</a>
-                                </h3>
-                                <span>Claims Adjuster</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <!-- End Team Area -->
-
-        <!-- Start Fun Fact Area -->
-        <div class="fun-fact-area life-fun-fact ptb-120">
-            <div class="container">
-                <div class="row align-items-center g-4 fun-fact-row" data-cues="slideInUp" data-duration="800">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
-                            <div class="d-flex align-items-center">
-                                <h3 class="fs-70 fw-900 lh-1 mb-2 counter">19</h3>
-                                <h3 class="fs-70 fw-900 lh-1 mb-2">K</h3>
-                            </div>
-                            <p class="fw-medium cp">Give Insurance</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
-                            <div class="d-flex align-items-center">
-                                <h3 class="fs-70 fw-900 lh-1 mb-2 counter">39</h3>
-                                <h3 class="fs-70 fw-900 lh-1 mb-2">K</h3>
-                            </div>
-                            <p class="fw-medium cp">Success Rating</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
-                            <div class="d-flex align-items-center">
-                                <h3 class="fs-70 fw-900 lh-1 mb-2 counter">13</h3>
-                                <h3 class="fs-70 fw-900 lh-1 mb-2">K</h3>
-                            </div>
-                            <p class="fw-medium cp">Happy Customers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="fun-fact-card position-relative d-flex align-items-center gap-3">
-                            <div class="d-flex align-items-center">
-                                <h3 class="fs-70 fw-900 lh-1 mb-2 counter">49</h3>
-                                <h3 class="fs-70 fw-900 lh-1 mb-2">+</h3>
-                            </div>
-                            <p class="fw-medium cp">Expert Team</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Fun Fact Area -->
-
-        <!-- Start Footer Area -->
-        <div class="footer-area pt-120 bg-0050 position-relative z-1">
-            <div class="container">
-                <div class="row align-items-center" data-cues="slideInUp" data-duration="800">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-weight f-card">
-                            <a href="index.html" class="f-logo d-block mb-4 fs-40 fw-bold">
-                                <img src="assets/images/white-logo.svg" alt="">
-                            </a>
-                            <ul class="address-list ps-0 pe-0 mb-0 list-unstyled">
-                                <li><span class="fw-semibold lh-1 text-white d-block mb-4">Contact Us</span></li>
-                                <li class="d-flex gap-4 align-items-center">
-                                    <i class="ti ti-map-pin"></i>
-                                    <a href="https://www.google.com/maps/place/71+Madison+Cct,+St+Clair+NSW+2759,+Australia/@-33.7963186,150.7668677,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12901f8d155521:0x8067d38a4d4f53c6!8m2!3d-33.7963231!4d150.7694426!16s%2Fg%2F11c1csfc03?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">71 Madison Cct, St Clair <span class="d-block"></span>NSW 2759, Australia</a>
-                                </li>
-                                <li class="d-flex gap-4 align-items-center">
-                                    <i class="ti ti-phone"></i>
-                                    <div>
-                                        <a href="tel:44123456789" class="d-block">(+44) 123 456 789</a>
-                                        <a href="tel:44123456789">(+44) 123 456 789</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex gap-4 align-items-center">
-                                    <i class="ti ti-mail"></i>
-                                    <div>
-                                        <a href="mailto:hello@flbi.com" class="d-block">hello@flbi.com</a>
-                                        <a href="mailto:hello@flbi.com">hello@flbi.com</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="footer-weight ps-0 p-xl-4">
-                            <h3 class="fs-22 fw-semibold lh-1 text-white">Quick Link</h3>
-                            <ul class="info-list ps-0 pe-0 mb-0 list-unstyled">
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="about-us.html">About Us</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="pricing.html">Pricing Plan</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="about-us.html">Our Team</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Our Services</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="contact-us.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-weight ps-0 ps-xl-5">
-                            <h3 class="fs-22 fw-semibold lh-1 text-white">Our Services</h3>
-                            <ul class="info-list ps-0 pe-0 mb-0 list-unstyled">
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Life Insurance</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Family Insurance</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Car Insurance</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Business Insurance</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Travel Insurance</a>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <a href="services.html">Fire Insurance</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-weight">
-                            <h3 class="fs-22 fw-semibold lh-1 text-white">Get Updates</h3>
-                            <p class="fadeD">There are many variations of passages of Lorem Ip available, but the majority have suffered alteration.</p>
-
-                            <form class="footer-form mb-4">
-                                <div class="f-group position-relative">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                    <button type="submit" class="read-more">
-                                        <i class="ti ti-mail"></i>
-                                    </button>
-                                </div>
-                            </form>
-
-                            <ul class="social-icons ps-0 pe-0 mb-0 list-unstyled d-flex align-items-center gap-4">
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-                                        <i class="ti ti-brand-facebook-filled"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="ti ti-brand-x"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
-                                        <i class="ti ti-brand-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.google.com/" target="_blank">
-                                        <i class="ti ti-brand-google-filled"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="assets/images/shape/footer-shape-1.png" alt="image" class="footer-shape">
-        </div>
-        <!-- End Footer Area -->
-
-        <!-- Start Copyright Area -->
-        <div class="copyright-area bg-0050 border-top">
-            <div class="container">
-                <p class="text-white">© <span class="fw-medium c-y">Flbi</span> All Right Reserved <a href="https://camionthemes.com" target="_blank" class="fw-medium c-y">CamionThemes</a></p>
-            </div>
-        </div>
-        <!-- End Copyright Area -->
-
-        <!-- Go top Btn -->
-        <div class="go-top">
-            <i class="ti ti-arrow-big-up-lines-filled"></i>
-        </div>
-        <!-- Go top Btn End -->
-
-        <!-- JS Files -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <script src="assets/js/fslightbox.min.js"></script>
-        <script src="assets/js/scrollCue.min.js"></script>
-        <script src="assets/js/custom.js"></script>
-    </body>
 </html>
