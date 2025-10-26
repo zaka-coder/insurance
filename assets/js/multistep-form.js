@@ -73,6 +73,22 @@
             // Update or create a hidden input for potential form submission later
             self._setHidden(field, value);
 
+            // Visually mark the clicked option as selected and clear others in this step
+            try {
+                var stepEl = btn.closest('.msf-step');
+                if (stepEl) {
+                    var other = Array.from(stepEl.querySelectorAll('.msf-option'));
+                    other.forEach(function (o) {
+                        o.classList.remove('selected');
+                        o.setAttribute('aria-pressed', 'false');
+                    });
+                    btn.classList.add('selected');
+                    btn.setAttribute('aria-pressed', 'true');
+                }
+            } catch (err) {
+                // ignore visual update errors
+            }
+
             // dispatch change event
             self._dispatchChange();
 
@@ -82,6 +98,29 @@
             } else {
                 // Last step - enable submit
                 self._finalize();
+            }
+        });
+    };
+
+    // Apply selected state for a given step element based on saved data
+    MultiStepForm.prototype._applySelectedForStep = function (stepEl) {
+        if (!stepEl) return;
+        var opts = Array.from(stepEl.querySelectorAll('.msf-option'));
+        if (!opts || !opts.length) return;
+
+        // find the field name used by this step (first option's data-field)
+        var field = opts[0].getAttribute('data-field');
+        if (!field) return;
+
+        var selectedValue = this.data[field];
+        opts.forEach(function (o) {
+            var val = o.getAttribute('data-value');
+            if (selectedValue !== undefined && String(val) === String(selectedValue)) {
+                o.classList.add('selected');
+                o.setAttribute('aria-pressed', 'true');
+            } else {
+                o.classList.remove('selected');
+                o.setAttribute('aria-pressed', 'false');
             }
         });
     };
@@ -163,6 +202,14 @@
             // fail silently — progress UI optional
             console.warn('msf progress update error', err);
         }
+
+        // apply selected states for the current step (if user previously answered)
+        try {
+            var curStepEl = this.form.querySelector('.msf-step[data-step="' + this.current + '"]');
+            this._applySelectedForStep(curStepEl);
+        } catch (e) {
+            // ignore
+        }
     };
 
     MultiStepForm.prototype._finalize = function () {
@@ -186,6 +233,11 @@
         if (this.hiddenContainer) this.hiddenContainer.innerHTML = '';
         this._showStep(1);
         if (this.submitBtn) this.submitBtn.disabled = true;
+        // clear visual selected states
+        try {
+            var all = Array.from(this.form.querySelectorAll('.msf-option'));
+            all.forEach(function (o) { o.classList.remove('selected'); o.setAttribute('aria-pressed', 'false'); });
+        } catch (e) {}
         this._dispatchChange();
     };
 

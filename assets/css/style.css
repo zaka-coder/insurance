@@ -6258,7 +6258,7 @@ Go Top Button CSS
 }
 
 .msf-indicator.active {
-  background: var(--yellow-color);
+  background: var(--yellow-color) !important;
   color: #fff;
   border: 2px solid #fff;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, .1);
@@ -6293,5 +6293,75 @@ Go Top Button CSS
   color: var(--primary);
 }
 
+.msf-step .options-wrapper {
+  width: 50%;
+}
+
+@media(max-width:768px) {
+  .msf-step .options-wrapper {
+    width: 100%;
+  }
+}
+
+/* Option card design (matches attached image) */
+button.msf-option {
+  display: flex !important;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  padding: 18px 22px;
+  border-radius: 8px;
+  border: 2px solid #2f3a66 !important;
+  /* darker blue border */
+  background: #fff !important;
+  color: #1f2340 !important;
+  text-align: left;
+  box-shadow: none !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+button.msf-option .option-label {
+  flex: 1;
+}
+
+/* radio-like circle on the left */
+button.msf-option::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #2f3a66;
+  background: #fff;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+/* selected state */
+button.msf-option.selected {
+  border-color: #2f3a66 !important;
+  background: #ffffff !important;
+  color: #1f2340 !important;
+}
+
+/* selected: fill the inner circle */
+button.msf-option.selected::before {
+  background: #2f3a66;
+  box-shadow: inset 0 0 0 6px #fff;
+  /* creates small inner white circle */
+}
+
+/* subtle hover */
+button.msf-option:hover {
+  background: #fbfdff !important;
+}
+
+/* reset button styling tweak to look like link */
+.msf-reset {
+  background: transparent !important;
+  border: none !important;
+  color: #6c757d !important;
+}
 
 /*# sourceMappingURL=style.css.map */
