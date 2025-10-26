@@ -314,21 +314,22 @@
                                 <div class="col-md-4">
                                     <div class="mb-3">
                                         <label for="zip" class="form-label">Zip Code</label>
-                                        <input type="number" class="form-control  msf-input" data-field="age_group"
+                                        <input type="number" class="form-control  msf-input" data-field="zip_code"
                                             id="zip" placeholder="00000">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mb-3">
                                         <label for="age" class="form-label">Age</label>
-                                        <input type="number" class="form-control  msf-input" data-field="age_group"
-                                            id="age" placeholder="35">
+                                        <input type="number" class="form-control  msf-input" data-field="age" id="age"
+                                            placeholder="35">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mb-3">
                                         <label for="sex" class="form-label">Sex</label>
-                                        <select id="sex" class="form-select" aria-label="Sex">
+                                        <select id="sex" class="form-select msf-input" aria-label="Sex"
+                                            data-field="sex">
                                             <option selected>Select</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
@@ -343,27 +344,23 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="mb-3">
-                                        <label for="zip" class="form-label">Zip Code</label>
-                                        <input type="number" class="form-control  msf-input" data-field="age_group"
-                                            id="zip" placeholder="00000">
+                                        <label for="household_member" class="form-label">Household Members</label>
+                                        <input type="number" class="form-control  msf-input"
+                                            data-field="household_member" id="household_member" placeholder="12">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mb-3">
-                                        <label for="age" class="form-label">Age</label>
-                                        <input type="number" class="form-control  msf-input" data-field="age_group"
-                                            id="age" placeholder="35">
+                                        <label for="household_income" class="form-label">Household Income</label>
+                                        <input type="number" class="form-control  msf-input"
+                                            data-field="household_income" id="household_income" placeholder="350">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mb-3">
-                                        <label for="sex" class="form-label">Sex</label>
-                                        <select id="sex" class="form-select" aria-label="Sex">
-                                            <option selected>Select</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">Female</option>
-                                            <option value="3">Other</option>
-                                        </select>
+                                        <label for="date_of_birth" class="form-label">Date of Birth</label>
+                                        <input type="date" class="form-control  msf-input" data-field="date_of_birth"
+                                            id="date_of_birth">
                                     </div>
                                 </div>
                             </div>
@@ -373,27 +370,23 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="mb-3">
-                                        <label for="zip" class="form-label">Zip Code</label>
-                                        <input type="number" class="form-control  msf-input" data-field="age_group"
-                                            id="zip" placeholder="00000">
+                                        <label for="child_1_name" class="form-label">Child#1 Name</label>
+                                        <input type="text" class="form-control  msf-input" data-field="child_1_name"
+                                            id="child_1_name" placeholder="joy">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mb-3">
-                                        <label for="age" class="form-label">Age</label>
-                                        <input type="number" class="form-control  msf-input" data-field="age_group"
-                                            id="age" placeholder="35">
+                                        <label for="child_2_name" class="form-label">Child#2 Name</label>
+                                        <input type="text" class="form-control  msf-input" data-field="child_2_name"
+                                            id="child_2_name" placeholder="joy">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mb-3">
-                                        <label for="sex" class="form-label">Sex</label>
-                                        <select id="sex" class="form-select" aria-label="Sex">
-                                            <option selected>Select</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">Female</option>
-                                            <option value="3">Other</option>
-                                        </select>
+                                        <label for="child_3_name" class="form-label">Child#3 Name</label>
+                                        <input type="text" class="form-control  msf-input" data-field="child_3_name"
+                                            id="child_3_name" placeholder="joy">
                                     </div>
                                 </div>
                             </div>
@@ -404,7 +397,7 @@
                     <div class="msf-controls mt-4 d-flex align-items-center justify-content-end gap-3">
                         <button type="button" class="msf-prev default-btn d-none">Previous</button>
                         <button type="button" class="msf-next default-btn">Next</button>
-                        <button type="submit" class="default-btn msf-submit d-none" disabled>Send Request</button>
+                        <button type="submit" class="default-btn msf-submit d-none">Send Request</button>
                     </div>
 
                     <!-- Hidden inputs will be kept in the form to allow later submission or integration -->
