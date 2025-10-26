@@ -6281,4 +6281,17 @@ Go Top Button CSS
   margin-top: .25rem;
   text-align: center;
 }
+
+.msf-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.msf-step .question {
+  color: var(--primary);
+}
+
+
 /*# sourceMappingURL=style.css.map */
