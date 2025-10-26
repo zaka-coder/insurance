@@ -1,72 +1,3 @@
-/*
-@File: Flbi. Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*********************************************
-*********************************************
-
-** - Default CSS
-** - Section Title CSS
-** - Header Area CSS
-** - Navbar Area CSS
-** - Responsive Navbar Area CSS
-** - Search Modal CSS
-** - Family Insurance Banner Area CSS
-** - Life Insurance Banner Area CSS
-** - Business Insurance Banner Area CSS
-** - Business Services Area Area CSS
-** - Life Services Area CSS
-** - Life Features Area CSS
-** - About Us Area CSS
-** - About Business Area CSS
-** - Categories Area CSS
-** - Team Area CSS
-** - Choose Us Area  CSS
-** - Why Choose Us Area CSS
-** - News Area CSS
-** - Blog Area CSS
-** - Fun Fact Area CSS
-** - Life Fun Fact Area CSS
-** - Features Area CSS
-** - Testimonials Area CSS
-** - Review Area CSS
-** - Clients Area CSS
-** - Benefits Area CSS
-** - Partner Area CSS
-** - Footer Area CSS
-** - Copyright Area CSS
-** - Progress Area CSS
-** - Advice Area CSS
-** - Award Area CSS
-** - App Area CSS
-** - Business Graph Area CSS
-** - Page Banner Area CSS
-** - Our Testimonials Page
-** - Team Single Page
-** - FAQ Page
-** - Pricing Page
-** - Appointment Page
-** - Sidebar Page
-** - Sidebar
-** - Service Details Page
-** - Projects Page
-** - Blog Details Page
-** - Contact Us Page
-** - Register Page
-** - Terms & Condition Page
-** - 404 Error Page CSS
-** - Service Pagination CSS
-** - Go Top Button CSS
-** - keyframes
-*/
-/*
-Google Fonts
-==========================================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
 :root {
@@ -1301,7 +1232,12 @@ Business Insurance Banner Area CSS h-3
 }
 .business-banner-area .b-image {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
+}
+@media(max-width:768px){
+  .business-banner-area .b-image {
+    bottom: 0;
+  }
 }
 .business-banner-area .talk-card {
   top: 150px;
