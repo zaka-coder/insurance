@@ -6290,7 +6290,9 @@ Go Top Button CSS
   text-align: center;
 }
 
-
+#msf-start-zip{
+  height: 50px!important;
+}
 
 
 /*# sourceMappingURL=style.css.map */

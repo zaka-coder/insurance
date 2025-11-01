@@ -125,3 +125,66 @@
     }
 
 })();
+
+// helper: show the msf form only after valid US ZIP
+function isValidUSZip(z) {
+    if (!z) return false;
+    z = String(z).trim();
+    return /^\d{5}(-\d{4})?$/.test(z);
+}
+
+function setupZipReveal() {
+    var startBtn = document.getElementById('msf-start-btn');
+    var zipInput = document.getElementById('msf-start-zip');
+    var err = document.getElementById('msf-zip-error');
+    if (!startBtn || !zipInput) return;
+
+    function showError(msg) {
+        if (!err) return;
+        err.textContent = msg || 'Invalid ZIP code.';
+        err.classList.remove('d-none');
+    }
+
+    startBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var val = zipInput.value.trim();
+        if (!isValidUSZip(val)) {
+            showError('Please enter a valid US ZIP code (e.g. 12345 or 12345-6789).');
+            return;
+        }
+        // hide error
+        if (err) err.classList.add('d-none');
+
+        // reveal first form on the page
+        var form = document.querySelector('form.multi-step-form');
+        if (form) {
+            form.classList.remove('d-none');
+
+            // prefill zip field inside the form if present
+            var zipField = form.querySelector('.msf-input[data-field="zip_code"]');
+            if (zipField) zipField.value = val;
+
+            // focus first visible input
+            setTimeout(function () {
+                var first = form.querySelector('.msf-step:not(.d-none) .msf-input');
+                if (first) first.focus();
+            }, 50);
+
+            // scroll into view smoothly
+            try { form.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (err) { }
+        }
+
+        // hide start block
+        var blk = document.getElementById('msf-zip-block');
+        if (blk) blk.classList.add('d-none');
+    });
+
+    // hide error on input
+    zipInput.addEventListener('input', function () {
+        if (err) err.classList.add('d-none');
+    });
+}
+
+// ensure ZIP reveal wiring is registered after helpers are defined
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { try { setupZipReveal(); } catch (e) { } });
+else { try { setupZipReveal(); } catch (e) { } }
