@@ -2855,6 +2855,19 @@ Business Services Area CSS h-2
   padding: 35px 35px;
 }
 
+/* Make business service cards equal height within their row
+   - ensure the column is a flex container so the card can stretch
+   - card becomes a column flex container so content flows normally
+*/
+.business-services-area .row.g-4 > [class*="col-"] {
+  display: flex;
+}
+.business-services-area .business-services-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
 .business-services-card .shop {
   display: inline-block;
   color: var(--primary);
