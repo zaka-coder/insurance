@@ -2868,6 +2868,32 @@ Business Services Area CSS h-2
   flex: 1 1 auto;
 }
 
+/* Contact & Privacy area styles */
+.contact-privacy-area {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contact-card, .privacy-card, .contact-form-card {
+  box-shadow: 0 6px 20px rgba(11,15,25,0.06);
+}
+.contact-card h3, .privacy-card h3, .contact-form-card h3 {
+  margin-bottom: 0.75rem;
+}
+.contact-form-card .form-control {
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.contact-form-card .default-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+}
+.contact-card ul li a {
+  color: var(--title-color);
+}
+.privacy-card p.small {
+  color: var(--paragraph);
+}
+
 .business-services-card .shop {
   display: inline-block;
   color: var(--primary);

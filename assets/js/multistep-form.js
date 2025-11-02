@@ -188,3 +188,52 @@ function setupZipReveal() {
 // ensure ZIP reveal wiring is registered after helpers are defined
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { try { setupZipReveal(); } catch (e) { } });
 else { try { setupZipReveal(); } catch (e) { } }
+
+// Contact form setup: basic validation, log and show success message
+function setupContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var successEl = document.getElementById('contact-success');
+    var errorEl = document.getElementById('contact-error');
+
+    function showSuccess() {
+        if (errorEl) errorEl.classList.add('d-none');
+        if (successEl) {
+            successEl.classList.remove('d-none');
+            setTimeout(function () { successEl.classList.add('d-none'); }, 6000);
+        }
+    }
+
+    function showError(msg) {
+        if (successEl) successEl.classList.add('d-none');
+        if (errorEl) {
+            errorEl.textContent = msg || 'Please enter a valid name and email.';
+            errorEl.classList.remove('d-none');
+            setTimeout(function () { errorEl.classList.add('d-none'); }, 6000);
+        }
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var formData = {};
+        var elems = form.querySelectorAll('input[name], textarea[name]');
+        Array.prototype.forEach.call(elems, function (el) { formData[el.name] = el.value; });
+
+        // basic validation
+        if (!formData.name || !formData.email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(formData.email)) {
+            showError('Please enter a valid name and email.');
+            return;
+        }
+
+        // log the contact submission (replace with fetch() to send to server)
+        console.log('contact form:', formData);
+
+        // clear form
+        form.reset();
+        showSuccess();
+    });
+}
+
+// register contact form wiring
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { try { setupContactForm(); } catch (e) { } });
+else { try { setupContactForm(); } catch (e) { } }
